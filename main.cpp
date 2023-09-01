@@ -247,7 +247,21 @@ int main(){
                 if(ImGui::DragFloat3("Rotation", glm::value_ptr(model_rotation), 0.05f, -360.0f, 360.0f))
                     plane.Rotation(shaderProgram, model_rotation);
                     plane.Rotation(normalsShaderProgram, model_rotation);
+                if(ImGui::DragFloat3("Scale", glm::value_ptr(model_scale), 0.05f, 1.0f, 10.0f))
+                    plane.Scale(shaderProgram, model_scale);
+                    plane.Scale(normalsShaderProgram, model_scale);
                 //std::cout<<glm::value_ptr(model_position)<<std::endl;
+
+                ImGui::InputText("Name", path, sizeof(path));
+                if (ImGui::Button("Load")) {
+                    // Assuming model_path is a char*
+                    std::string modelPathString = "../Models/";
+                    modelPathString += path;
+                    modelPathString += "/scene.gltf";
+                    const char* modelFilePath = modelPathString.c_str();
+                    Model newM(modelFilePath);
+                    plane = newM;
+                }
 
                 ImGui::End();
             }

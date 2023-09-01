@@ -17,10 +17,12 @@ int selectedLightType;
 int cullType;
 int camType=0;
 int cullFace = 0;
+char path[1024] = "map";
 
 
 glm::vec3 model_position = glm::vec3(0.0f);
 glm::vec3 model_rotation = glm::vec3 (0.0f);
+glm::vec3 model_scale = glm::vec3(1.0f);
 
 
 #endif //GAME_GAMEENGINE_H

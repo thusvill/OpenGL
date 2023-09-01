@@ -30,10 +30,11 @@ uniform mat4 scale;
 
 uniform mat4 newPos = mat4(0.0001f);
 uniform mat4 newRot = mat4(0.0001f);
+uniform mat4 newScale = mat4(1.0f);
 
 void main()
 {
-	gl_Position = model * translation * rotation * scale*newRot* newPos*vec4(aPos, 1.0f);
+	gl_Position = model * translation * rotation * scale*newRot*newScale * newPos*vec4(aPos, 1.0f);
 	data_out.Normal = aNormal;
 	data_out.color = aColor;
 	data_out.texCoord = mat2(0.0, -1.0, 1.0, 0.0) * aTex;

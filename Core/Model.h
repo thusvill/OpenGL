@@ -16,6 +16,7 @@ public:
     void Draw(Shader& shader, Camera& camera);
     void Position(Shader shader, glm::vec3 newPosition);
     void Rotation(Shader shader, glm::vec3 rotation);
+    void Scale(Shader shader, glm::vec3 newScale);
 
 
 private:

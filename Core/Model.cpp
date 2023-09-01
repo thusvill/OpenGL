@@ -37,6 +37,12 @@ void Model::Rotation(Shader shader, glm::vec3 rotation) {
     glUniformMatrix4fv(modelMatrixLocation, 1, GL_FALSE, glm::value_ptr(newModelMatrix));
 }
 
+void Model::Scale(Shader shader, glm::vec3 newScale) {
+    GLuint modelMatrixLocation = glGetUniformLocation(shader.ID, "newScale");
+    glm::mat4 newModelMatrix = glm::scale(glm::mat4(1.0f), newScale);
+    glUniformMatrix4fv(modelMatrixLocation, 1, GL_FALSE, glm::value_ptr(newModelMatrix));
+}
+
 void Model::loadMesh(unsigned int indMesh) {
     unsigned int posAccInd = JSON["meshes"][indMesh]["primitives"][0]["attributes"]["POSITION"];
     unsigned int normalAccInd = JSON["meshes"][indMesh]["primitives"][0]["attributes"]["NORMAL"];
