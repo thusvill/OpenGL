@@ -1,6 +1,6 @@
 CMakeFiles/glad.dir/glad/src/glad.c.o: \
- /home/bios/CLionProjects/Game/glad/src/glad.c /usr/include/stdc-predef.h \
- /usr/include/stdio.h \
+ /home/bios/CLionProjects/Game/OpenGL/glad/src/glad.c \
+ /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -51,8 +51,8 @@ CMakeFiles/glad.dir/glad/src/glad.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h \
- /home/bios/CLionProjects/Game/glad/include/glad/glad.h \
- /home/bios/CLionProjects/Game/glad/include/KHR/khrplatform.h \
+ /home/bios/CLionProjects/Game/OpenGL/glad/include/glad/glad.h \
+ /home/bios/CLionProjects/Game/OpenGL/glad/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h /usr/include/dlfcn.h \

@@ -1,6 +1,8 @@
 CMakeFiles/Game.dir/Core/Mesh.cpp.o: \
- /home/bios/CLionProjects/Game/Core/Mesh.cpp /usr/include/stdc-predef.h \
- /home/bios/CLionProjects/Game/Core/Mesh.h /usr/include/c++/11/string \
+ /home/bios/CLionProjects/Game/OpenGL/Core/Mesh.cpp \
+ /usr/include/stdc-predef.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/Mesh.h \
+ /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -128,10 +130,10 @@ CMakeFiles/Game.dir/Core/Mesh.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /home/bios/CLionProjects/Game/Core/VAO.h \
- /home/bios/CLionProjects/Game/Core/../glad/include/glad/glad.h \
- /home/bios/CLionProjects/Game/glad/include/KHR/khrplatform.h \
- /home/bios/CLionProjects/Game/Core/VBO.h /usr/include/glm/glm.hpp \
+ /home/bios/CLionProjects/Game/OpenGL/Core/VAO.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/../glad/include/glad/glad.h \
+ /home/bios/CLionProjects/Game/OpenGL/glad/include/KHR/khrplatform.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/VBO.h /usr/include/glm/glm.hpp \
  /usr/include/glm/detail/_fixes.hpp /usr/include/c++/11/cmath \
  /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -282,9 +284,9 @@ CMakeFiles/Game.dir/Core/Mesh.cpp.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/bios/CLionProjects/Game/Core/EBO.h \
- /home/bios/CLionProjects/Game/Core/Camera.h /usr/include/GLFW/glfw3.h \
- /usr/include/glm/gtc/matrix_transform.hpp \
+ /home/bios/CLionProjects/Game/OpenGL/Core/EBO.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/Camera.h \
+ /usr/include/GLFW/glfw3.h /usr/include/glm/gtc/matrix_transform.hpp \
  /usr/include/glm/ext/matrix_projection.hpp \
  /usr/include/glm/gtc/constants.hpp \
  /usr/include/glm/ext/scalar_constants.hpp \
@@ -341,7 +343,7 @@ CMakeFiles/Game.dir/Core/Mesh.cpp.o: \
  /usr/include/glm/gtx/component_wise.inl /usr/include/glm/gtx/norm.inl \
  /usr/include/glm/gtx/quaternion.inl \
  /usr/include/glm/gtx/vector_angle.inl \
- /home/bios/CLionProjects/Game/Core/shaderClass.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/shaderClass.h \
  /usr/include/c++/11/fstream /usr/include/c++/11/istream \
  /usr/include/c++/11/ios /usr/include/c++/11/exception \
  /usr/include/c++/11/bits/exception_ptr.h \
@@ -368,6 +370,6 @@ CMakeFiles/Game.dir/Core/Mesh.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/sstream \
  /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/iostream \
- /home/bios/CLionProjects/Game/Core/Texture.h \
- /home/bios/CLionProjects/Game/Core/stb/stb_image.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/Texture.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/stb/stb_image.h \
  /usr/include/c++/11/stdlib.h

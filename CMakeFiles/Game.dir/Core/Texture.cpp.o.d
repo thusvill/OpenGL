@@ -1,8 +1,9 @@
 CMakeFiles/Game.dir/Core/Texture.cpp.o: \
- /home/bios/CLionProjects/Game/Core/Texture.cpp \
- /usr/include/stdc-predef.h /home/bios/CLionProjects/Game/Core/Texture.h \
- /home/bios/CLionProjects/Game/Core/../glad/include/glad/glad.h \
- /home/bios/CLionProjects/Game/glad/include/KHR/khrplatform.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/Texture.cpp \
+ /usr/include/stdc-predef.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/Texture.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/../glad/include/glad/glad.h \
+ /home/bios/CLionProjects/Game/OpenGL/glad/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -18,8 +19,8 @@ CMakeFiles/Game.dir/Core/Texture.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/bios/CLionProjects/Game/Core/stb/stb_image.h /usr/include/stdio.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/stb/stb_image.h \
+ /usr/include/stdio.h /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
@@ -63,7 +64,7 @@ CMakeFiles/Game.dir/Core/Texture.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/11/bits/std_abs.h \
- /home/bios/CLionProjects/Game/Core/shaderClass.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/shaderClass.h \
  /usr/include/c++/11/fstream /usr/include/c++/11/istream \
  /usr/include/c++/11/ios /usr/include/c++/11/iosfwd \
  /usr/include/c++/11/bits/stringfwd.h \

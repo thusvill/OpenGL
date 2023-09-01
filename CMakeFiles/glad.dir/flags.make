@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/bios/CLionProjects/Game/glad/include
+C_INCLUDES = -I/home/bios/CLionProjects/Game/OpenGL/glad/include
 
 C_FLAGS = -g
 

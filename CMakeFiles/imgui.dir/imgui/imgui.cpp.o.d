@@ -1,7 +1,8 @@
 CMakeFiles/imgui.dir/imgui/imgui.cpp.o: \
- /home/bios/CLionProjects/Game/imgui/imgui.cpp /usr/include/stdc-predef.h \
- /home/bios/CLionProjects/Game/imgui/imgui.h \
- /home/bios/CLionProjects/Game/imgui/imconfig.h \
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imgui.cpp \
+ /usr/include/stdc-predef.h \
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imgui.h \
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imconfig.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h /usr/include/string.h \
@@ -16,7 +17,7 @@ CMakeFiles/imgui.dir/imgui/imgui.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h /usr/include/assert.h \
- /home/bios/CLionProjects/Game/imgui/imgui_internal.h \
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imgui_internal.h \
  /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
  /usr/include/x86_64-linux-gnu/bits/time64.h \
@@ -191,7 +192,7 @@ CMakeFiles/imgui.dir/imgui/imgui.cpp.o: \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/amxbf16intrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/prfchwintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/keylockerintrin.h \
- /home/bios/CLionProjects/Game/imgui/imstb_textedit.h \
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imstb_textedit.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h

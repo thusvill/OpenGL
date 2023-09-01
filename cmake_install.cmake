@@ -1,4 +1,4 @@
-# Install script for directory: /home/bios/CLionProjects/Game
+# Install script for directory: /home/bios/CLionProjects/Game/OpenGL
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/bios/CLionProjects/Game/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/bios/CLionProjects/Game/OpenGL/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

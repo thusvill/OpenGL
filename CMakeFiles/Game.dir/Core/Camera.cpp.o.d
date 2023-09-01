@@ -1,8 +1,9 @@
 CMakeFiles/Game.dir/Core/Camera.cpp.o: \
- /home/bios/CLionProjects/Game/Core/Camera.cpp /usr/include/stdc-predef.h \
- /home/bios/CLionProjects/Game/Core/Camera.h \
- /home/bios/CLionProjects/Game/Core/../glad/include/glad/glad.h \
- /home/bios/CLionProjects/Game/glad/include/KHR/khrplatform.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/Camera.cpp \
+ /usr/include/stdc-predef.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/Camera.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/../glad/include/glad/glad.h \
+ /home/bios/CLionProjects/Game/OpenGL/glad/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -274,7 +275,7 @@ CMakeFiles/Game.dir/Core/Camera.cpp.o: \
  /usr/include/glm/gtx/component_wise.inl /usr/include/glm/gtx/norm.inl \
  /usr/include/glm/gtx/quaternion.inl \
  /usr/include/glm/gtx/vector_angle.inl \
- /home/bios/CLionProjects/Game/Core/shaderClass.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/shaderClass.h \
  /usr/include/c++/11/fstream /usr/include/c++/11/istream \
  /usr/include/c++/11/ios /usr/include/c++/11/iosfwd \
  /usr/include/c++/11/bits/stringfwd.h \

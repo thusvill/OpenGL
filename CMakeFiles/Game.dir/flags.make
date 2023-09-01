@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/bios/CLionProjects/Game/src -I/home/bios/CLionProjects/Game/imgui -I/home/bios/CLionProjects/Game/glad/include -isystem /usr/lib
+CXX_INCLUDES = -I/home/bios/CLionProjects/Game/OpenGL/src -I/home/bios/CLionProjects/Game/OpenGL/imgui -I/home/bios/CLionProjects/Game/OpenGL/glad/include -isystem /usr/lib
 
 CXX_FLAGS = -g
 

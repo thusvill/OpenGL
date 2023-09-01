@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bios/CLionProjects/Game
+CMAKE_SOURCE_DIR = /home/bios/CLionProjects/Game/OpenGL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bios/CLionProjects/Game
+CMAKE_BINARY_DIR = /home/bios/CLionProjects/Game/OpenGL
 
 # Include any dependencies generated for this target.
 include CMakeFiles/glad.dir/depend.make
@@ -72,16 +72,16 @@ include CMakeFiles/glad.dir/flags.make
 CMakeFiles/glad.dir/glad/src/glad.c.o: CMakeFiles/glad.dir/flags.make
 CMakeFiles/glad.dir/glad/src/glad.c.o: glad/src/glad.c
 CMakeFiles/glad.dir/glad/src/glad.c.o: CMakeFiles/glad.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bios/CLionProjects/Game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/glad.dir/glad/src/glad.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/glad.dir/glad/src/glad.c.o -MF CMakeFiles/glad.dir/glad/src/glad.c.o.d -o CMakeFiles/glad.dir/glad/src/glad.c.o -c /home/bios/CLionProjects/Game/glad/src/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bios/CLionProjects/Game/OpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/glad.dir/glad/src/glad.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/glad.dir/glad/src/glad.c.o -MF CMakeFiles/glad.dir/glad/src/glad.c.o.d -o CMakeFiles/glad.dir/glad/src/glad.c.o -c /home/bios/CLionProjects/Game/OpenGL/glad/src/glad.c
 
 CMakeFiles/glad.dir/glad/src/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glad.dir/glad/src/glad.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bios/CLionProjects/Game/glad/src/glad.c > CMakeFiles/glad.dir/glad/src/glad.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bios/CLionProjects/Game/OpenGL/glad/src/glad.c > CMakeFiles/glad.dir/glad/src/glad.c.i
 
 CMakeFiles/glad.dir/glad/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glad.dir/glad/src/glad.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bios/CLionProjects/Game/glad/src/glad.c -o CMakeFiles/glad.dir/glad/src/glad.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bios/CLionProjects/Game/OpenGL/glad/src/glad.c -o CMakeFiles/glad.dir/glad/src/glad.c.s
 
 # Object files for target glad
 glad_OBJECTS = \
@@ -93,7 +93,7 @@ glad_EXTERNAL_OBJECTS =
 libglad.a: CMakeFiles/glad.dir/glad/src/glad.c.o
 libglad.a: CMakeFiles/glad.dir/build.make
 libglad.a: CMakeFiles/glad.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bios/CLionProjects/Game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libglad.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bios/CLionProjects/Game/OpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libglad.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/glad.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glad.dir/link.txt --verbose=$(VERBOSE)
 
@@ -106,6 +106,6 @@ CMakeFiles/glad.dir/clean:
 .PHONY : CMakeFiles/glad.dir/clean
 
 CMakeFiles/glad.dir/depend:
-	cd /home/bios/CLionProjects/Game && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bios/CLionProjects/Game /home/bios/CLionProjects/Game /home/bios/CLionProjects/Game /home/bios/CLionProjects/Game /home/bios/CLionProjects/Game/CMakeFiles/glad.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/bios/CLionProjects/Game/OpenGL && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bios/CLionProjects/Game/OpenGL /home/bios/CLionProjects/Game/OpenGL /home/bios/CLionProjects/Game/OpenGL /home/bios/CLionProjects/Game/OpenGL /home/bios/CLionProjects/Game/OpenGL/CMakeFiles/glad.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/glad.dir/depend
 

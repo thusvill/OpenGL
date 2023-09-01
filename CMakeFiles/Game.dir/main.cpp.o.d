@@ -1,8 +1,8 @@
-CMakeFiles/Game.dir/main.cpp.o: /home/bios/CLionProjects/Game/main.cpp \
- /usr/include/stdc-predef.h \
- /home/bios/CLionProjects/Game/Core/GameEngine.h \
- /home/bios/CLionProjects/Game/Core/../imgui/imgui.h \
- /home/bios/CLionProjects/Game/Core/../imgui/imconfig.h \
+CMakeFiles/Game.dir/main.cpp.o: \
+ /home/bios/CLionProjects/Game/OpenGL/main.cpp /usr/include/stdc-predef.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/GameEngine.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/../imgui/imgui.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/../imgui/imconfig.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h /usr/include/string.h \
@@ -17,9 +17,9 @@ CMakeFiles/Game.dir/main.cpp.o: /home/bios/CLionProjects/Game/main.cpp \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h /usr/include/assert.h \
- /home/bios/CLionProjects/Game/Core/../imgui/imgui_impl_glfw.h \
- /home/bios/CLionProjects/Game/Core/../imgui/imgui_impl_opengl3.h \
- /home/bios/CLionProjects/Game/Core/../imgui/imgui_internal.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/../imgui/imgui_impl_glfw.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/../imgui/imgui_impl_opengl3.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/../imgui/imgui_internal.h \
  /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
  /usr/include/x86_64-linux-gnu/bits/time64.h \
@@ -194,9 +194,9 @@ CMakeFiles/Game.dir/main.cpp.o: /home/bios/CLionProjects/Game/main.cpp \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/amxbf16intrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/prfchwintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/keylockerintrin.h \
- /home/bios/CLionProjects/Game/Core/../imgui/imstb_textedit.h \
- /home/bios/CLionProjects/Game/Core/Model.h \
- /home/bios/CLionProjects/Game/Core/json/json.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/../imgui/imstb_textedit.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/Model.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/json/json.h \
  /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
  /usr/include/c++/11/bits/stl_relops.h \
  /usr/include/c++/11/initializer_list /usr/include/c++/11/bits/stl_algo.h \
@@ -321,11 +321,11 @@ CMakeFiles/Game.dir/main.cpp.o: /home/bios/CLionProjects/Game/main.cpp \
  /usr/include/c++/11/bits/basic_ios.tcc /usr/include/c++/11/ostream \
  /usr/include/c++/11/bits/ostream.tcc \
  /usr/include/c++/11/bits/istream.tcc \
- /home/bios/CLionProjects/Game/Core/Mesh.h \
- /home/bios/CLionProjects/Game/Core/VAO.h \
- /home/bios/CLionProjects/Game/Core/../glad/include/glad/glad.h \
- /home/bios/CLionProjects/Game/glad/include/KHR/khrplatform.h \
- /home/bios/CLionProjects/Game/Core/VBO.h /usr/include/glm/glm.hpp \
+ /home/bios/CLionProjects/Game/OpenGL/Core/Mesh.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/VAO.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/../glad/include/glad/glad.h \
+ /home/bios/CLionProjects/Game/OpenGL/glad/include/KHR/khrplatform.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/VBO.h /usr/include/glm/glm.hpp \
  /usr/include/glm/detail/_fixes.hpp /usr/include/glm/detail/setup.hpp \
  /usr/include/glm/simd/platform.h /usr/include/c++/11/climits \
  /usr/include/c++/11/cfloat /usr/include/glm/fwd.hpp \
@@ -439,9 +439,9 @@ CMakeFiles/Game.dir/main.cpp.o: /home/bios/CLionProjects/Game/main.cpp \
  /usr/include/glm/detail/type_half.hpp \
  /usr/include/glm/detail/type_half.inl /usr/include/glm/integer.hpp \
  /usr/include/glm/detail/func_integer.inl \
- /home/bios/CLionProjects/Game/Core/EBO.h \
- /home/bios/CLionProjects/Game/Core/Camera.h /usr/include/GLFW/glfw3.h \
- /usr/include/glm/gtc/matrix_transform.hpp \
+ /home/bios/CLionProjects/Game/OpenGL/Core/EBO.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/Camera.h \
+ /usr/include/GLFW/glfw3.h /usr/include/glm/gtc/matrix_transform.hpp \
  /usr/include/glm/ext/matrix_projection.hpp \
  /usr/include/glm/gtc/constants.hpp \
  /usr/include/glm/ext/scalar_constants.hpp \
@@ -497,12 +497,12 @@ CMakeFiles/Game.dir/main.cpp.o: /home/bios/CLionProjects/Game/main.cpp \
  /usr/include/glm/gtx/component_wise.inl /usr/include/glm/gtx/norm.inl \
  /usr/include/glm/gtx/quaternion.inl \
  /usr/include/glm/gtx/vector_angle.inl \
- /home/bios/CLionProjects/Game/Core/shaderClass.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/shaderClass.h \
  /usr/include/c++/11/fstream /usr/include/c++/11/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/sstream \
  /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/iostream \
- /home/bios/CLionProjects/Game/Core/Texture.h \
- /home/bios/CLionProjects/Game/Core/stb/stb_image.h \
- /home/bios/CLionProjects/Game/Core/FBO.h
+ /home/bios/CLionProjects/Game/OpenGL/Core/Texture.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/stb/stb_image.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/FBO.h

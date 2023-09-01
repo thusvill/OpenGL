@@ -1,8 +1,9 @@
 CMakeFiles/Game.dir/Core/EBO.cpp.o: \
- /home/bios/CLionProjects/Game/Core/EBO.cpp /usr/include/stdc-predef.h \
- /home/bios/CLionProjects/Game/Core/EBO.h \
- /home/bios/CLionProjects/Game/Core/../glad/include/glad/glad.h \
- /home/bios/CLionProjects/Game/glad/include/KHR/khrplatform.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/EBO.cpp \
+ /usr/include/stdc-predef.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/EBO.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/../glad/include/glad/glad.h \
+ /home/bios/CLionProjects/Game/OpenGL/glad/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

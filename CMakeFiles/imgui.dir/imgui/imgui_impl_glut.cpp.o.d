@@ -1,7 +1,8 @@
 CMakeFiles/imgui.dir/imgui/imgui_impl_glut.cpp.o: \
- /home/bios/CLionProjects/Game/imgui/imgui_impl_glut.cpp \
- /usr/include/stdc-predef.h /home/bios/CLionProjects/Game/imgui/imgui.h \
- /home/bios/CLionProjects/Game/imgui/imconfig.h \
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imgui_impl_glut.cpp \
+ /usr/include/stdc-predef.h \
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imgui.h \
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imconfig.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h /usr/include/string.h \
@@ -16,7 +17,7 @@ CMakeFiles/imgui.dir/imgui/imgui_impl_glut.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h /usr/include/assert.h \
- /home/bios/CLionProjects/Game/imgui/imgui_impl_glut.h \
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imgui_impl_glut.h \
  /usr/include/GL/freeglut.h /usr/include/GL/freeglut_std.h \
  /usr/include/GL/gl.h /usr/include/GL/glext.h \
  /usr/include/KHR/khrplatform.h \

@@ -1,7 +1,8 @@
 CMakeFiles/Game.dir/Core/stb/stb_image.cpp.o: \
- /home/bios/CLionProjects/Game/Core/stb/stb_image.cpp \
+ /home/bios/CLionProjects/Game/OpenGL/Core/stb/stb_image.cpp \
  /usr/include/stdc-predef.h \
- /home/bios/CLionProjects/Game/Core/stb/stb_image.h /usr/include/stdio.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/stb/stb_image.h \
+ /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
