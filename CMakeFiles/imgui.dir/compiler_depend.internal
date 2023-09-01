@@ -3,10 +3,9 @@
 
 CMakeFiles/imgui.dir/imgui/imgui.cpp.o
  /home/bios/CLionProjects/Game/OpenGL/imgui/imgui.cpp
- /home/bios/CLionProjects/Game/imgui/imgui.cpp
  /usr/include/stdc-predef.h
- /home/bios/CLionProjects/Game/imgui/imgui.h
- /home/bios/CLionProjects/Game/imgui/imconfig.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imgui.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imconfig.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
@@ -24,7 +23,7 @@ CMakeFiles/imgui.dir/imgui/imgui.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h
  /usr/include/strings.h
  /usr/include/assert.h
- /home/bios/CLionProjects/Game/imgui/imgui_internal.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imgui_internal.h
  /usr/include/stdio.h
  /usr/include/x86_64-linux-gnu/bits/types.h
  /usr/include/x86_64-linux-gnu/bits/typesizes.h
@@ -211,7 +210,7 @@ CMakeFiles/imgui.dir/imgui/imgui.cpp.o
  /usr/lib/gcc/x86_64-linux-gnu/11/include/amxbf16intrin.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/prfchwintrin.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/keylockerintrin.h
- /home/bios/CLionProjects/Game/imgui/imstb_textedit.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imstb_textedit.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
  /usr/include/stdint.h
  /usr/include/x86_64-linux-gnu/bits/wchar.h
@@ -219,10 +218,9 @@ CMakeFiles/imgui.dir/imgui/imgui.cpp.o
 
 CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.o
  /home/bios/CLionProjects/Game/OpenGL/imgui/imgui_demo.cpp
- /home/bios/CLionProjects/Game/imgui/imgui_demo.cpp
  /usr/include/stdc-predef.h
- /home/bios/CLionProjects/Game/imgui/imgui.h
- /home/bios/CLionProjects/Game/imgui/imconfig.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imgui.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imconfig.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
@@ -351,10 +349,9 @@ CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.o
 
 CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o
  /home/bios/CLionProjects/Game/OpenGL/imgui/imgui_draw.cpp
- /home/bios/CLionProjects/Game/imgui/imgui_draw.cpp
  /usr/include/stdc-predef.h
- /home/bios/CLionProjects/Game/imgui/imgui.h
- /home/bios/CLionProjects/Game/imgui/imconfig.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imgui.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imconfig.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
@@ -372,7 +369,7 @@ CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h
  /usr/include/strings.h
  /usr/include/assert.h
- /home/bios/CLionProjects/Game/imgui/imgui_internal.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imgui_internal.h
  /usr/include/stdio.h
  /usr/include/x86_64-linux-gnu/bits/types.h
  /usr/include/x86_64-linux-gnu/bits/typesizes.h
@@ -559,16 +556,15 @@ CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o
  /usr/lib/gcc/x86_64-linux-gnu/11/include/amxbf16intrin.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/prfchwintrin.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/keylockerintrin.h
- /home/bios/CLionProjects/Game/imgui/imstb_textedit.h
- /home/bios/CLionProjects/Game/imgui/imstb_rectpack.h
- /home/bios/CLionProjects/Game/imgui/imstb_truetype.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imstb_textedit.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imstb_rectpack.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imstb_truetype.h
 
 CMakeFiles/imgui.dir/imgui/imgui_impl_glfw.cpp.o
  /home/bios/CLionProjects/Game/OpenGL/imgui/imgui_impl_glfw.cpp
- /home/bios/CLionProjects/Game/imgui/imgui_impl_glfw.cpp
  /usr/include/stdc-predef.h
- /home/bios/CLionProjects/Game/imgui/imgui.h
- /home/bios/CLionProjects/Game/imgui/imconfig.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imgui.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imconfig.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
@@ -586,7 +582,7 @@ CMakeFiles/imgui.dir/imgui/imgui_impl_glfw.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h
  /usr/include/strings.h
  /usr/include/assert.h
- /home/bios/CLionProjects/Game/imgui/imgui_impl_glfw.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imgui_impl_glfw.h
  /usr/include/GLFW/glfw3.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
  /usr/include/stdint.h
@@ -602,10 +598,9 @@ CMakeFiles/imgui.dir/imgui/imgui_impl_glfw.cpp.o
 
 CMakeFiles/imgui.dir/imgui/imgui_impl_glut.cpp.o
  /home/bios/CLionProjects/Game/OpenGL/imgui/imgui_impl_glut.cpp
- /home/bios/CLionProjects/Game/imgui/imgui_impl_glut.cpp
  /usr/include/stdc-predef.h
- /home/bios/CLionProjects/Game/imgui/imgui.h
- /home/bios/CLionProjects/Game/imgui/imconfig.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imgui.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imconfig.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
@@ -623,7 +618,7 @@ CMakeFiles/imgui.dir/imgui/imgui_impl_glut.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h
  /usr/include/strings.h
  /usr/include/assert.h
- /home/bios/CLionProjects/Game/imgui/imgui_impl_glut.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imgui_impl_glut.h
  /usr/include/GL/freeglut.h
  /usr/include/GL/freeglut_std.h
  /usr/include/GL/gl.h
@@ -678,10 +673,9 @@ CMakeFiles/imgui.dir/imgui/imgui_impl_glut.cpp.o
 
 CMakeFiles/imgui.dir/imgui/imgui_impl_opengl2.cpp.o
  /home/bios/CLionProjects/Game/OpenGL/imgui/imgui_impl_opengl2.cpp
- /home/bios/CLionProjects/Game/imgui/imgui_impl_opengl2.cpp
  /usr/include/stdc-predef.h
- /home/bios/CLionProjects/Game/imgui/imgui.h
- /home/bios/CLionProjects/Game/imgui/imconfig.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imgui.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imconfig.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
@@ -699,7 +693,7 @@ CMakeFiles/imgui.dir/imgui/imgui_impl_opengl2.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h
  /usr/include/strings.h
  /usr/include/assert.h
- /home/bios/CLionProjects/Game/imgui/imgui_impl_opengl2.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imgui_impl_opengl2.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
  /usr/include/stdint.h
  /usr/include/x86_64-linux-gnu/bits/types.h
@@ -714,10 +708,9 @@ CMakeFiles/imgui.dir/imgui/imgui_impl_opengl2.cpp.o
 
 CMakeFiles/imgui.dir/imgui/imgui_impl_opengl3.cpp.o
  /home/bios/CLionProjects/Game/OpenGL/imgui/imgui_impl_opengl3.cpp
- /home/bios/CLionProjects/Game/imgui/imgui_impl_opengl3.cpp
  /usr/include/stdc-predef.h
- /home/bios/CLionProjects/Game/imgui/imgui.h
- /home/bios/CLionProjects/Game/imgui/imconfig.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imgui.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imconfig.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
@@ -735,7 +728,7 @@ CMakeFiles/imgui.dir/imgui/imgui_impl_opengl3.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h
  /usr/include/strings.h
  /usr/include/assert.h
- /home/bios/CLionProjects/Game/imgui/imgui_impl_opengl3.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imgui_impl_opengl3.h
  /usr/include/stdio.h
  /usr/include/x86_64-linux-gnu/bits/types.h
  /usr/include/x86_64-linux-gnu/bits/typesizes.h
@@ -755,7 +748,7 @@ CMakeFiles/imgui.dir/imgui/imgui_impl_opengl3.cpp.o
  /usr/include/x86_64-linux-gnu/bits/wchar.h
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
- /home/bios/CLionProjects/Game/imgui/imgui_impl_opengl3_loader.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imgui_impl_opengl3_loader.h
  /usr/include/c++/11/stdlib.h
  /usr/include/c++/11/cstdlib
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h
@@ -796,10 +789,9 @@ CMakeFiles/imgui.dir/imgui/imgui_impl_opengl3.cpp.o
 
 CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o
  /home/bios/CLionProjects/Game/OpenGL/imgui/imgui_tables.cpp
- /home/bios/CLionProjects/Game/imgui/imgui_tables.cpp
  /usr/include/stdc-predef.h
- /home/bios/CLionProjects/Game/imgui/imgui.h
- /home/bios/CLionProjects/Game/imgui/imconfig.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imgui.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imconfig.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
@@ -817,7 +809,7 @@ CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h
  /usr/include/strings.h
  /usr/include/assert.h
- /home/bios/CLionProjects/Game/imgui/imgui_internal.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imgui_internal.h
  /usr/include/stdio.h
  /usr/include/x86_64-linux-gnu/bits/types.h
  /usr/include/x86_64-linux-gnu/bits/typesizes.h
@@ -1004,7 +996,7 @@ CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o
  /usr/lib/gcc/x86_64-linux-gnu/11/include/amxbf16intrin.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/prfchwintrin.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/keylockerintrin.h
- /home/bios/CLionProjects/Game/imgui/imstb_textedit.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imstb_textedit.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
  /usr/include/stdint.h
  /usr/include/x86_64-linux-gnu/bits/wchar.h
@@ -1012,10 +1004,9 @@ CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o
 
 CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o
  /home/bios/CLionProjects/Game/OpenGL/imgui/imgui_widgets.cpp
- /home/bios/CLionProjects/Game/imgui/imgui_widgets.cpp
  /usr/include/stdc-predef.h
- /home/bios/CLionProjects/Game/imgui/imgui.h
- /home/bios/CLionProjects/Game/imgui/imconfig.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imgui.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imconfig.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
@@ -1033,7 +1024,7 @@ CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h
  /usr/include/strings.h
  /usr/include/assert.h
- /home/bios/CLionProjects/Game/imgui/imgui_internal.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imgui_internal.h
  /usr/include/stdio.h
  /usr/include/x86_64-linux-gnu/bits/types.h
  /usr/include/x86_64-linux-gnu/bits/typesizes.h
@@ -1220,7 +1211,7 @@ CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o
  /usr/lib/gcc/x86_64-linux-gnu/11/include/amxbf16intrin.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/prfchwintrin.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/keylockerintrin.h
- /home/bios/CLionProjects/Game/imgui/imstb_textedit.h
+ /home/bios/CLionProjects/Game/OpenGL/imgui/imstb_textedit.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
  /usr/include/stdint.h
  /usr/include/x86_64-linux-gnu/bits/wchar.h

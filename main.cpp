@@ -1,9 +1,9 @@
 #include "Core/GameEngine.h"
 
 const unsigned int Width = 1920;
-const unsigned int Height = 1920;
+const unsigned int Height = 1080;
 bool face_culling = false;
-bool anti_aliasing = true;
+bool anti_aliasing = false;
 bool debug_draw = false;
 bool VSYNC =  false;
 int samples = 8;
@@ -161,6 +161,8 @@ int main(){
      */
 
     Model plane("../Models/statue/scene.gltf");
+    plane.Position(shaderProgram, glm::vec3(0.001f));
+    plane.Rotation(shaderProgram, glm::vec3(0.001f));
 
     double prevTime = 0.0;
     double crntTime = 0.0;
@@ -198,6 +200,7 @@ int main(){
         camera.updateMatrix();
 
         frameBuffer.Bind();
+        glEnable(GL_DEPTH_TEST);
         {
             //Draw Code
             glClearColor(0.07f, 0.13f, 0.17f, 1.0f);
@@ -237,11 +240,11 @@ int main(){
             //Model
             {
                 ImGui::Begin("Model");
-                if(ImGui::DragFloat3("Position", glm::value_ptr(model_position), 0.1f,1.0f, 10.0f))
+                if(ImGui::DragFloat3("Position", glm::value_ptr(model_position), 0.05f,-10.0f, 10.0f))
                     plane.Position(shaderProgram, model_position);
                     plane.Position(normalsShaderProgram, model_position);
 
-                if(ImGui::DragFloat3("Rotation", glm::value_ptr(model_rotation), 0.1f, 0.0f, 360.0f))
+                if(ImGui::DragFloat3("Rotation", glm::value_ptr(model_rotation), 0.05f, -360.0f, 360.0f))
                     plane.Rotation(shaderProgram, model_rotation);
                     plane.Rotation(normalsShaderProgram, model_rotation);
                 //std::cout<<glm::value_ptr(model_position)<<std::endl;
@@ -317,13 +320,12 @@ int main(){
                 ImGui::Checkbox("VSYNC",&VSYNC);
                 glfwSwapInterval((int)VSYNC);
                 if(ImGui::Checkbox("Anti-Aliasing",&anti_aliasing)) {
-                    if (anti_aliasing) {
-                        if (ImGui::DragInt("Samples", &samples, 1.0f, 0, 100)) {
-                            glfwWindowHint(GLFW_SAMPLES, samples);
-                        }
-                    }
+
+
                     if (anti_aliasing) {
                         //glfwWindowHint(GLFW_SAMPLES, samples);
+                        ImGui::DragInt("Samples", &samples, 1.0f, 0, 100);
+                        glfwWindowHint(GLFW_SAMPLES, samples);
                         glEnable(GL_MULTISAMPLE);
                     } else {
                         glDisable(GL_MULTISAMPLE);
@@ -337,11 +339,11 @@ int main(){
                     const char* cullFaces[] = {"Front face", "Back face"};
                     if(ImGui::Combo("Culling face", &cullFace, cullFaces, IM_ARRAYSIZE(cullFaces))){
                         switch (cullFace) {
-                            case 1:
-                                glCullFace(GL_BACK);
-                                break;
                             case 0:
                                 glCullFace(GL_FRONT);
+                                break;
+                            case 1:
+                                glCullFace(GL_BACK);
                                 break;
                         }
                     }
@@ -380,7 +382,7 @@ int main(){
 
     shaderProgram.Delete();
     normalsShaderProgram.Delete();
-    //skyboxShader.Delete();
+
 
     ImGui_ImplOpenGL3_Shutdown();
     ImGui_ImplGlfw_Shutdown();

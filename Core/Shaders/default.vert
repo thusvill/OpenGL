@@ -28,8 +28,8 @@ uniform mat4 translation;
 uniform mat4 rotation;
 uniform mat4 scale;
 
-uniform mat4 newPos = mat4(0.0f);
-uniform mat4 newRot = mat4(0.0f);
+uniform mat4 newPos = mat4(0.0001f);
+uniform mat4 newRot = mat4(0.0001f);
 
 void main()
 {

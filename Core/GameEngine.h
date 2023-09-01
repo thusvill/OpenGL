@@ -16,7 +16,7 @@
 int selectedLightType;
 int cullType;
 int camType=0;
-int cullFace;
+int cullFace = 0;
 
 
 glm::vec3 model_position = glm::vec3(0.0f);
