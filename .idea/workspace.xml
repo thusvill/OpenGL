@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated />
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1afca8b5-ec47-4bef-a0ae-4609af25f887" name="Changes" comment="master" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <branch-grouping />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/OpenGL" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2023" />
+    <option name="minorVersion" value="1.3" />
+  </component>
+  <component name="ProjectId" id="2SPCCIuzuRrYshuqrWsCb37JFe4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/bios/CLionProjects/Game&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;structure.view.defaults.are.configured&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/Textures" />
+      <recent name="$PROJECT_DIR$/glad" />
+      <recent name="$PROJECT_DIR$/glad/include" />
+      <recent name="$PROJECT_DIR$/" />
+    </key>
+  </component>
+  <component name="RunManager" selected="C/C++ File.main.cpp">
+    <configuration name="main.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Game" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp">
+      <option name="sourceFile" value="main.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="%" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="%" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="all" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="all" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="default_target" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="default_target" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="C/C++ File.main.cpp" />
+      <item itemvalue="Makefile Target.all" />
+      <item itemvalue="Makefile Target.%" />
+      <item itemvalue="Makefile Target.default_target" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="C/C++ File.main.cpp" />
+        <item itemvalue="Makefile Target.default_target" />
+        <item itemvalue="Makefile Target.all" />
+        <item itemvalue="Makefile Target.%" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1afca8b5-ec47-4bef-a0ae-4609af25f887" name="Changes" comment="" />
+      <created>1689038700119</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689038700119</updated>
+      <workItem from="1689038701885" duration="5328000" />
+      <workItem from="1689130128605" duration="4843000" />
+      <workItem from="1689140433049" duration="2000" />
+      <workItem from="1689140591838" duration="1554000" />
+      <workItem from="1689311844638" duration="609000" />
+      <workItem from="1689312461318" duration="672000" />
+      <workItem from="1691250517673" duration="10000" />
+      <workItem from="1691424333325" duration="3213000" />
+      <workItem from="1691455438044" duration="582000" />
+      <workItem from="1691456664520" duration="2000" />
+      <workItem from="1691456785617" duration="3472000" />
+      <workItem from="1691589486658" duration="32000" />
+      <workItem from="1691675629850" duration="34000" />
+      <workItem from="1691722659704" duration="3792000" />
+      <workItem from="1691735217611" duration="940000" />
+      <workItem from="1691822091505" duration="6144000" />
+      <workItem from="1691847413860" duration="125000" />
+      <workItem from="1691848024888" duration="70000" />
+      <workItem from="1692028507571" duration="2946000" />
+      <workItem from="1692191723490" duration="53000" />
+      <workItem from="1692202469335" duration="1154000" />
+      <workItem from="1692236232256" duration="5696000" />
+      <workItem from="1692270425460" duration="4243000" />
+      <workItem from="1692322630779" duration="4230000" />
+      <workItem from="1692376674304" duration="2531000" />
+      <workItem from="1692411609136" duration="9278000" />
+      <workItem from="1692448062151" duration="11275000" />
+      <workItem from="1692496620692" duration="1472000" />
+      <workItem from="1692503701716" duration="41000" />
+      <workItem from="1692583993978" duration="112000" />
+      <workItem from="1692622475997" duration="11000" />
+      <workItem from="1692637711063" duration="817000" />
+      <workItem from="1692719995356" duration="2480000" />
+      <workItem from="1692753229007" duration="18713000" />
+      <workItem from="1692780049581" duration="4737000" />
+      <workItem from="1692784798256" duration="2679000" />
+      <workItem from="1692809633172" duration="1174000" />
+      <workItem from="1692841654912" duration="1220000" />
+      <workItem from="1693014399294" duration="8140000" />
+      <workItem from="1693055668466" duration="9866000" />
+      <workItem from="1693145837814" duration="5669000" />
+      <workItem from="1693182035011" duration="3328000" />
+      <workItem from="1693190584920" duration="730000" />
+      <workItem from="1693192929734" duration="612000" />
+      <workItem from="1693202629843" duration="3799000" />
+      <workItem from="1693209856051" duration="5012000" />
+      <workItem from="1693271104887" duration="802000" />
+      <workItem from="1693272041069" duration="8132000" />
+      <workItem from="1693280361478" duration="5319000" />
+      <workItem from="1693286664082" duration="767000" />
+      <workItem from="1693313128545" duration="4622000" />
+      <workItem from="1693484906587" duration="19115000" />
+      <workItem from="1693531564930" duration="9638000" />
+      <workItem from="1693544402289" duration="3335000" />
+    </task>
+    <task id="LOCAL-00001" summary="master">
+      <created>1693185186643</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693185186643</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.frag" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.vert" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticEditVcpkgJson value="false" />
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticFoundErrors value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="master" />
+    <option name="LAST_COMMIT_MESSAGE" value="master" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

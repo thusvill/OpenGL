@@ -1,0 +1,112 @@
+[
+{
+  "directory": "/home/bios/CLionProjects/Game/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/imgui.dir/imgui/imgui.cpp.o -c /home/bios/CLionProjects/Game/imgui/imgui.cpp",
+  "file": "/home/bios/CLionProjects/Game/imgui/imgui.cpp"
+},
+{
+  "directory": "/home/bios/CLionProjects/Game/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.o -c /home/bios/CLionProjects/Game/imgui/imgui_demo.cpp",
+  "file": "/home/bios/CLionProjects/Game/imgui/imgui_demo.cpp"
+},
+{
+  "directory": "/home/bios/CLionProjects/Game/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o -c /home/bios/CLionProjects/Game/imgui/imgui_draw.cpp",
+  "file": "/home/bios/CLionProjects/Game/imgui/imgui_draw.cpp"
+},
+{
+  "directory": "/home/bios/CLionProjects/Game/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/imgui.dir/imgui/imgui_impl_glfw.cpp.o -c /home/bios/CLionProjects/Game/imgui/imgui_impl_glfw.cpp",
+  "file": "/home/bios/CLionProjects/Game/imgui/imgui_impl_glfw.cpp"
+},
+{
+  "directory": "/home/bios/CLionProjects/Game/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/imgui.dir/imgui/imgui_impl_glut.cpp.o -c /home/bios/CLionProjects/Game/imgui/imgui_impl_glut.cpp",
+  "file": "/home/bios/CLionProjects/Game/imgui/imgui_impl_glut.cpp"
+},
+{
+  "directory": "/home/bios/CLionProjects/Game/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/imgui.dir/imgui/imgui_impl_opengl2.cpp.o -c /home/bios/CLionProjects/Game/imgui/imgui_impl_opengl2.cpp",
+  "file": "/home/bios/CLionProjects/Game/imgui/imgui_impl_opengl2.cpp"
+},
+{
+  "directory": "/home/bios/CLionProjects/Game/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/imgui.dir/imgui/imgui_impl_opengl3.cpp.o -c /home/bios/CLionProjects/Game/imgui/imgui_impl_opengl3.cpp",
+  "file": "/home/bios/CLionProjects/Game/imgui/imgui_impl_opengl3.cpp"
+},
+{
+  "directory": "/home/bios/CLionProjects/Game/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o -c /home/bios/CLionProjects/Game/imgui/imgui_tables.cpp",
+  "file": "/home/bios/CLionProjects/Game/imgui/imgui_tables.cpp"
+},
+{
+  "directory": "/home/bios/CLionProjects/Game/build",
+  "command": "/usr/bin/g++   -g -std=gnu++11 -o CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o -c /home/bios/CLionProjects/Game/imgui/imgui_widgets.cpp",
+  "file": "/home/bios/CLionProjects/Game/imgui/imgui_widgets.cpp"
+},
+{
+  "directory": "/home/bios/CLionProjects/Game/build",
+  "command": "/usr/bin/gcc  -I/home/bios/CLionProjects/Game/glad/include -g -o CMakeFiles/glad.dir/glad/src/glad.c.o -c /home/bios/CLionProjects/Game/glad/src/glad.c",
+  "file": "/home/bios/CLionProjects/Game/glad/src/glad.c"
+},
+{
+  "directory": "/home/bios/CLionProjects/Game/build",
+  "command": "/usr/bin/g++  -I/home/bios/CLionProjects/Game/src -I/home/bios/CLionProjects/Game/imgui -I/home/bios/CLionProjects/Game/glad/include -isystem /usr/lib -g -std=gnu++11 -o CMakeFiles/Game.dir/Core/Camera.cpp.o -c /home/bios/CLionProjects/Game/Core/Camera.cpp",
+  "file": "/home/bios/CLionProjects/Game/Core/Camera.cpp"
+},
+{
+  "directory": "/home/bios/CLionProjects/Game/build",
+  "command": "/usr/bin/g++  -I/home/bios/CLionProjects/Game/src -I/home/bios/CLionProjects/Game/imgui -I/home/bios/CLionProjects/Game/glad/include -isystem /usr/lib -g -std=gnu++11 -o CMakeFiles/Game.dir/Core/EBO.cpp.o -c /home/bios/CLionProjects/Game/Core/EBO.cpp",
+  "file": "/home/bios/CLionProjects/Game/Core/EBO.cpp"
+},
+{
+  "directory": "/home/bios/CLionProjects/Game/build",
+  "command": "/usr/bin/g++  -I/home/bios/CLionProjects/Game/src -I/home/bios/CLionProjects/Game/imgui -I/home/bios/CLionProjects/Game/glad/include -isystem /usr/lib -g -std=gnu++11 -o CMakeFiles/Game.dir/Core/FBO.cpp.o -c /home/bios/CLionProjects/Game/Core/FBO.cpp",
+  "file": "/home/bios/CLionProjects/Game/Core/FBO.cpp"
+},
+{
+  "directory": "/home/bios/CLionProjects/Game/build",
+  "command": "/usr/bin/g++  -I/home/bios/CLionProjects/Game/src -I/home/bios/CLionProjects/Game/imgui -I/home/bios/CLionProjects/Game/glad/include -isystem /usr/lib -g -std=gnu++11 -o CMakeFiles/Game.dir/Core/Mesh.cpp.o -c /home/bios/CLionProjects/Game/Core/Mesh.cpp",
+  "file": "/home/bios/CLionProjects/Game/Core/Mesh.cpp"
+},
+{
+  "directory": "/home/bios/CLionProjects/Game/build",
+  "command": "/usr/bin/g++  -I/home/bios/CLionProjects/Game/src -I/home/bios/CLionProjects/Game/imgui -I/home/bios/CLionProjects/Game/glad/include -isystem /usr/lib -g -std=gnu++11 -o CMakeFiles/Game.dir/Core/Model.cpp.o -c /home/bios/CLionProjects/Game/Core/Model.cpp",
+  "file": "/home/bios/CLionProjects/Game/Core/Model.cpp"
+},
+{
+  "directory": "/home/bios/CLionProjects/Game/build",
+  "command": "/usr/bin/g++  -I/home/bios/CLionProjects/Game/src -I/home/bios/CLionProjects/Game/imgui -I/home/bios/CLionProjects/Game/glad/include -isystem /usr/lib -g -std=gnu++11 -o CMakeFiles/Game.dir/Core/Scene/Scene.cpp.o -c /home/bios/CLionProjects/Game/Core/Scene/Scene.cpp",
+  "file": "/home/bios/CLionProjects/Game/Core/Scene/Scene.cpp"
+},
+{
+  "directory": "/home/bios/CLionProjects/Game/build",
+  "command": "/usr/bin/g++  -I/home/bios/CLionProjects/Game/src -I/home/bios/CLionProjects/Game/imgui -I/home/bios/CLionProjects/Game/glad/include -isystem /usr/lib -g -std=gnu++11 -o CMakeFiles/Game.dir/Core/Texture.cpp.o -c /home/bios/CLionProjects/Game/Core/Texture.cpp",
+  "file": "/home/bios/CLionProjects/Game/Core/Texture.cpp"
+},
+{
+  "directory": "/home/bios/CLionProjects/Game/build",
+  "command": "/usr/bin/g++  -I/home/bios/CLionProjects/Game/src -I/home/bios/CLionProjects/Game/imgui -I/home/bios/CLionProjects/Game/glad/include -isystem /usr/lib -g -std=gnu++11 -o CMakeFiles/Game.dir/Core/VAO.cpp.o -c /home/bios/CLionProjects/Game/Core/VAO.cpp",
+  "file": "/home/bios/CLionProjects/Game/Core/VAO.cpp"
+},
+{
+  "directory": "/home/bios/CLionProjects/Game/build",
+  "command": "/usr/bin/g++  -I/home/bios/CLionProjects/Game/src -I/home/bios/CLionProjects/Game/imgui -I/home/bios/CLionProjects/Game/glad/include -isystem /usr/lib -g -std=gnu++11 -o CMakeFiles/Game.dir/Core/VBO.cpp.o -c /home/bios/CLionProjects/Game/Core/VBO.cpp",
+  "file": "/home/bios/CLionProjects/Game/Core/VBO.cpp"
+},
+{
+  "directory": "/home/bios/CLionProjects/Game/build",
+  "command": "/usr/bin/g++  -I/home/bios/CLionProjects/Game/src -I/home/bios/CLionProjects/Game/imgui -I/home/bios/CLionProjects/Game/glad/include -isystem /usr/lib -g -std=gnu++11 -o CMakeFiles/Game.dir/Core/shaderClass.cpp.o -c /home/bios/CLionProjects/Game/Core/shaderClass.cpp",
+  "file": "/home/bios/CLionProjects/Game/Core/shaderClass.cpp"
+},
+{
+  "directory": "/home/bios/CLionProjects/Game/build",
+  "command": "/usr/bin/g++  -I/home/bios/CLionProjects/Game/src -I/home/bios/CLionProjects/Game/imgui -I/home/bios/CLionProjects/Game/glad/include -isystem /usr/lib -g -std=gnu++11 -o CMakeFiles/Game.dir/Core/stb/stb_image.cpp.o -c /home/bios/CLionProjects/Game/Core/stb/stb_image.cpp",
+  "file": "/home/bios/CLionProjects/Game/Core/stb/stb_image.cpp"
+},
+{
+  "directory": "/home/bios/CLionProjects/Game/build",
+  "command": "/usr/bin/g++  -I/home/bios/CLionProjects/Game/src -I/home/bios/CLionProjects/Game/imgui -I/home/bios/CLionProjects/Game/glad/include -isystem /usr/lib -g -std=gnu++11 -o CMakeFiles/Game.dir/main.cpp.o -c /home/bios/CLionProjects/Game/main.cpp",
+  "file": "/home/bios/CLionProjects/Game/main.cpp"
+}
+]

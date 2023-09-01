@@ -1,0 +1,5 @@
+/home/bios/CLionProjects/Game/build/CMakeFiles/Game.dir
+/home/bios/CLionProjects/Game/build/CMakeFiles/glad.dir
+/home/bios/CLionProjects/Game/build/CMakeFiles/imgui.dir
+/home/bios/CLionProjects/Game/build/CMakeFiles/edit_cache.dir
+/home/bios/CLionProjects/Game/build/CMakeFiles/rebuild_cache.dir
