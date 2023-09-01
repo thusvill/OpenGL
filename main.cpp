@@ -160,7 +160,7 @@ int main(){
 
      */
 
-    Model plane("Models/statue/scene.gltf");
+    Model plane("../Models/statue/scene.gltf");
 
     double prevTime = 0.0;
     double crntTime = 0.0;
