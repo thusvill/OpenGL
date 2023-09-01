@@ -90,6 +90,11 @@ void Docking()
     ImGui::End();
 }
 
+void UpdateLight(glm::vec4 lightColor, glm::vec3 lightPos, Shader shaderProgram){
+    shaderProgram.Activate();
+    glUniform4f(glGetUniformLocation(shaderProgram.ID, "lightColor"), lightColor.x, lightColor.y, lightColor.z, lightColor.w);
+    glUniform3f(glGetUniformLocation(shaderProgram.ID, "lightPos"), lightPos.x, lightPos.y, lightPos.z);
+}
 
 int main(){
     glfwInit();
@@ -129,15 +134,11 @@ int main(){
     io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;
 
 
-
     Shader shaderProgram("Core/Shaders/default.vert","Core/Shaders/default.frag", "Core/Shaders/default.geom");
     Shader normalsShaderProgram("Core/Shaders/default.vert","Core/Shaders/normals.frag", "Core/Shaders/normals.geom");
 
-
     glm::vec4 lightColor = glm::vec4(1.0f, 1.0f, 1.0f, 1.0f);
     glm::vec3 lightPos = glm::vec3(0.5f, 0.5f, 0.5f);
-
-
 
     shaderProgram.Activate();
     glUniform4f(glGetUniformLocation(shaderProgram.ID, "lightColor"), lightColor.x, lightColor.y, lightColor.z, lightColor.w);
@@ -276,6 +277,10 @@ int main(){
                     GLuint light_loc = glGetUniformLocation(shaderProgram.ID, "type");
                     glUniform1i(light_loc,selectedLightType);
                 }
+
+                ImGui::ColorEdit4("Light Color", glm::value_ptr(lightColor));
+                ImGui::DragFloat3("Position", glm::value_ptr(lightPos), 0.5f, -10.0f, 10.0f);
+                UpdateLight(lightColor, lightPos, shaderProgram);
 
                 ImGui::End();
             }

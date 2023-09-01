@@ -25,4 +25,6 @@ glm::vec3 model_rotation = glm::vec3 (0.0f);
 glm::vec3 model_scale = glm::vec3(1.0f);
 
 
+
+
 #endif //GAME_GAMEENGINE_H
