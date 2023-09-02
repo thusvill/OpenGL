@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/bios/CLionProjects/Game/OpenGL/Core/FBO.cpp" "CMakeFiles/Game.dir/Core/FBO.cpp.o" "gcc" "CMakeFiles/Game.dir/Core/FBO.cpp.o.d"
   "/home/bios/CLionProjects/Game/OpenGL/Core/Mesh.cpp" "CMakeFiles/Game.dir/Core/Mesh.cpp.o" "gcc" "CMakeFiles/Game.dir/Core/Mesh.cpp.o.d"
   "/home/bios/CLionProjects/Game/OpenGL/Core/Model.cpp" "CMakeFiles/Game.dir/Core/Model.cpp.o" "gcc" "CMakeFiles/Game.dir/Core/Model.cpp.o.d"
+  "/home/bios/CLionProjects/Game/OpenGL/Core/Scene/Scene.cpp" "CMakeFiles/Game.dir/Core/Scene/Scene.cpp.o" "gcc" "CMakeFiles/Game.dir/Core/Scene/Scene.cpp.o.d"
   "/home/bios/CLionProjects/Game/OpenGL/Core/Texture.cpp" "CMakeFiles/Game.dir/Core/Texture.cpp.o" "gcc" "CMakeFiles/Game.dir/Core/Texture.cpp.o.d"
   "/home/bios/CLionProjects/Game/OpenGL/Core/VAO.cpp" "CMakeFiles/Game.dir/Core/VAO.cpp.o" "gcc" "CMakeFiles/Game.dir/Core/VAO.cpp.o.d"
   "/home/bios/CLionProjects/Game/OpenGL/Core/VBO.cpp" "CMakeFiles/Game.dir/Core/VBO.cpp.o" "gcc" "CMakeFiles/Game.dir/Core/VBO.cpp.o.d"

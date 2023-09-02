@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 # Add the executable target
 file(GLOB_RECURSE SRC_FILES "Core/*.cpp")
-add_executable(Game ${SRC_FILES} main.cpp Core/shaderClass.cpp Core/VBO.cpp Core/VBO.h Core/EBO.cpp Core/EBO.h Core/VAO.cpp Core/VAO.h Core/stb/stb_image.cpp Core/stb/stb_image.h Core/Texture.cpp Core/Texture.h Core/Camera.cpp Core/Camera.h Core/Mesh.cpp Core/Mesh.h Core/Mesh.cpp Core/json/json.h Core/Model.cpp Core/Model.h Core/FBO.cpp Core/FBO.h Core/GameEngine.h )
+add_executable(Game ${SRC_FILES} main.cpp Core/shaderClass.cpp Core/VBO.cpp Core/VBO.h Core/EBO.cpp Core/EBO.h Core/VAO.cpp Core/VAO.h Core/stb/stb_image.cpp Core/stb/stb_image.h Core/Texture.cpp Core/Texture.h Core/Camera.cpp Core/Camera.h Core/Mesh.cpp Core/Mesh.h Core/Mesh.cpp Core/json/json.h Core/Model.cpp Core/Model.h Core/FBO.cpp Core/FBO.h Core/GameEngine.h Core/entt/entt.hpp Core/Core.h)
 
 # Find the OpenGL package
 find_package(OpenGL REQUIRED COMPONENTS OpenGL)

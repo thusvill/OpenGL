@@ -275,6 +275,30 @@ Core/Model.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Core/Model.cpp.s
 .PHONY : Core/Model.cpp.s
 
+Core/Scene/Scene.o: Core/Scene/Scene.cpp.o
+.PHONY : Core/Scene/Scene.o
+
+# target to build an object file
+Core/Scene/Scene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Core/Scene/Scene.cpp.o
+.PHONY : Core/Scene/Scene.cpp.o
+
+Core/Scene/Scene.i: Core/Scene/Scene.cpp.i
+.PHONY : Core/Scene/Scene.i
+
+# target to preprocess a source file
+Core/Scene/Scene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Core/Scene/Scene.cpp.i
+.PHONY : Core/Scene/Scene.cpp.i
+
+Core/Scene/Scene.s: Core/Scene/Scene.cpp.s
+.PHONY : Core/Scene/Scene.s
+
+# target to generate assembly for a file
+Core/Scene/Scene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Core/Scene/Scene.cpp.s
+.PHONY : Core/Scene/Scene.cpp.s
+
 Core/Texture.o: Core/Texture.cpp.o
 .PHONY : Core/Texture.o
 
@@ -685,6 +709,9 @@ help:
 	@echo "... Core/Model.o"
 	@echo "... Core/Model.i"
 	@echo "... Core/Model.s"
+	@echo "... Core/Scene/Scene.o"
+	@echo "... Core/Scene/Scene.i"
+	@echo "... Core/Scene/Scene.s"
 	@echo "... Core/Texture.o"
 	@echo "... Core/Texture.i"
 	@echo "... Core/Texture.s"
