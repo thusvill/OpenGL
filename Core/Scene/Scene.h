@@ -15,6 +15,8 @@ public:
 
     Entity CreateEntity(const std::string& name = "");
 
+    void OnUpdate();
+
 private:
     entt::registry m_Registry;
     friend class Entity;

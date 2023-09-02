@@ -2857,6 +2857,7 @@ CMakeFiles/Game.dir/Core/Scene/Scene.cpp.o: Core/Scene/Scene.cpp \
   Core/Scene/Scene.h \
   Core/Scene/Entity.h \
   Core/GameEngine.h \
+  Core/Scene/Entity.inl \
   Core/Scene/Components.h \
   Core/Core.h
 
@@ -4539,6 +4540,7 @@ CMakeFiles/Game.dir/main.cpp.o: main.cpp \
   /usr/include/c++/11/bits/unordered_set.h \
   Core/Scene/Entity.h \
   Core/GameEngine.h \
+  Core/Scene/Entity.inl \
   Core/Scene/Components.h \
   Core/Core.h
 

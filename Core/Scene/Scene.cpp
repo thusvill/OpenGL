@@ -23,3 +23,7 @@ Entity Scene::CreateEntity(const std::string& name) {
 
     return entity;
 }
+
+void Scene::OnUpdate() {
+
+}

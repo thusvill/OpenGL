@@ -178,9 +178,10 @@ float light_intensity = 1.0f;
 
         Model plane("../Models/statue/scene.gltf");
         auto model = m_ActiveScene->CreateEntity("model");
-
-        plane.Position(shaderProgram, glm::vec3(0.001f));
-        plane.Rotation(shaderProgram, glm::vec3(0.001f));
+        model.AddComponent<MeshRenderer>(plane, shaderProgram, camera);
+        Model model_m = model.GetComponent<MeshRenderer>().mesh;
+        model_m.Position(shaderProgram, glm::vec3(0.001f));
+        model_m.Rotation(shaderProgram, glm::vec3(0.001f));
 
         double prevTime = 0.0;
         double crntTime = 0.0;
@@ -222,9 +223,11 @@ float light_intensity = 1.0f;
                 //Draw Code
                 glClearColor(0.07f, 0.13f, 0.17f, 1.0f);
                 glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-                plane.Draw(shaderProgram, camera);
+                //plane.Draw(shaderProgram, camera);
+                m_ActiveScene->OnUpdate();
+                model_m.Draw(shaderProgram, camera);
                 if (debug_draw)
-                    plane.Draw(normalsShaderProgram, camera);
+                    model_m.Draw(normalsShaderProgram, camera);
             }
             frameBuffer.Unbind();
 
@@ -257,19 +260,21 @@ float light_intensity = 1.0f;
                 //Model
                 {
                     ImGui::Begin("Model");
+                    ImGui::Text("%s", model.GetComponent<TagComponent>().Tag.c_str());
+                    ImGui::Separator();
                     DrawVec3Controls("Position", model_position);
-                    plane.Position(shaderProgram, model_position);
-                    plane.Position(normalsShaderProgram, model_position);
+                    model_m.Position(shaderProgram, model_position);
+                    model_m.Position(normalsShaderProgram, model_position);
 
                     //glm::vec3 rotation_in_deg = glm::degrees(model_rotation);
                     DrawVec3Controls("Rotation", model_rotation);
                     //model_rotation = rotation_in_deg;
-                    plane.Rotation(shaderProgram, model_rotation);
-                    plane.Rotation(normalsShaderProgram, model_rotation);
+                    model_m.Rotation(shaderProgram, model_rotation);
+                    model_m.Rotation(normalsShaderProgram, model_rotation);
 
                     DrawVec3Controls("Scale", model_scale, 1.0f);
-                    plane.Scale(shaderProgram, model_scale);
-                    plane.Scale(normalsShaderProgram, model_scale);
+                    model_m.Scale(shaderProgram, model_scale);
+                    model_m.Scale(normalsShaderProgram, model_scale);
                     //std::cout<<glm::value_ptr(model_position)<<std::endl;
 
                     ImGui::InputText("Name", path, sizeof(path));
@@ -280,7 +285,7 @@ float light_intensity = 1.0f;
                         modelPathString += "/scene.gltf";
                         const char *modelFilePath = modelPathString.c_str();
                         Model newM(modelFilePath);
-                        plane = newM;
+                        model_m = newM;
                     }
 
                     ImGui::End();
@@ -311,7 +316,7 @@ float light_intensity = 1.0f;
                     //ImGui::Text("Camera Position: (%.2f, %.2f, %.2f)", camera.Position.x, camera.Position.y,camera.Position.z);
                     DrawVec3Controls("Camera Position", camera.Position);
                     //ImGui::Text("Camera Rotation: (%.2f, %.2f, %.2f)", camera.Orientation.x, camera.Orientation.y,camera.Orientation.z);
-                    DrawVec3Controls("Camera Position", camera.Orientation);
+                    DrawVec3Controls("Camera Rotation", camera.Orientation);
                     if (ImGui::Button("Reset to preset")) {
                         camera.Position = glm::vec3(2.07479f, 1.249f, -0.381916f);
                         camera.Orientation = glm::vec3(-4.71458f, -1.41498f, 0.173473f);

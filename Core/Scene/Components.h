@@ -6,6 +6,7 @@
 #define GAME_COMPONENTS_HPP
 #include "../GameEngine.h"
 
+
 struct TagComponent{
     std::string Tag;
 
@@ -20,6 +21,17 @@ struct Transform{
     glm::vec3 Scale;
     Transform() = default;
     Transform(const Transform&) = default;
+};
+
+struct MeshRenderer{
+    Model mesh;
+    Shader shader;
+    Camera camera;
+
+    MeshRenderer() =  default;
+    MeshRenderer(const MeshRenderer&) = default;
+    MeshRenderer(Model new_mesh, Shader newShader, Camera cam): mesh(new_mesh), shader(newShader), camera(cam){};
+
 };
 
 #endif //GAME_COMPONENTS_HPP
