@@ -2242,7 +2242,6 @@ CMakeFiles/Game.dir/Core/Scene/Entity.cpp.o
  /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Components.hpp
  /home/bios/CLionProjects/Game/OpenGL/Core/GameEngine.h
  /home/bios/CLionProjects/Game/OpenGL/Core/Core.h
- /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Scene.hpp
 
 CMakeFiles/Game.dir/Core/Scene/Scene.cpp.o
  /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Scene.cpp
@@ -2865,7 +2864,6 @@ CMakeFiles/Game.dir/Core/Scene/Scene.cpp.o
  /home/bios/CLionProjects/Game/OpenGL/Core/Core.h
  /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Entity.hpp
  /home/bios/CLionProjects/Game/OpenGL/Core/GameEngine.h
- /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Scene.hpp
 
 CMakeFiles/Game.dir/Core/Texture.cpp.o
  /home/bios/CLionProjects/Game/OpenGL/Core/Texture.cpp
@@ -4553,4 +4551,5 @@ CMakeFiles/Game.dir/main.cpp.o
  /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Components.hpp
  /home/bios/CLionProjects/Game/OpenGL/Core/GameEngine.h
  /home/bios/CLionProjects/Game/OpenGL/Core/Core.h
+ /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Entity.hpp
 

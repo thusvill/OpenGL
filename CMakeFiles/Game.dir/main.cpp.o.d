@@ -518,5 +518,4 @@ CMakeFiles/Game.dir/main.cpp.o: \
  /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Components.hpp \
  /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../GameEngine.h \
  /home/bios/CLionProjects/Game/OpenGL/Core/Core.h \
- /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Entity.hpp \
- /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Scene.hpp
+ /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Entity.hpp

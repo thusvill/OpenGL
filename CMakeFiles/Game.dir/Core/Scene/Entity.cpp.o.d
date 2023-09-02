@@ -520,5 +520,4 @@ CMakeFiles/Game.dir/Core/Scene/Entity.cpp.o: \
  /usr/include/c++/11/bits/unordered_set.h \
  /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../Scene/Components.hpp \
  /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../Scene/../GameEngine.h \
- /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../Core.h \
- /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Scene.hpp
+ /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../Core.h

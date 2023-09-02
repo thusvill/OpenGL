@@ -2235,8 +2235,7 @@ CMakeFiles/Game.dir/Core/Scene/Entity.cpp.o: Core/Scene/Entity.cpp \
   /usr/include/c++/11/bits/unordered_set.h \
   Core/Scene/Components.hpp \
   Core/GameEngine.h \
-  Core/Core.h \
-  Core/Scene/Scene.hpp
+  Core/Core.h
 
 CMakeFiles/Game.dir/Core/Scene/Scene.cpp.o: Core/Scene/Scene.cpp \
   /usr/include/stdc-predef.h \
@@ -2857,8 +2856,7 @@ CMakeFiles/Game.dir/Core/Scene/Scene.cpp.o: Core/Scene/Scene.cpp \
   Core/Scene/Scene.hpp \
   Core/Core.h \
   Core/Scene/Entity.hpp \
-  Core/GameEngine.h \
-  Core/Scene/Scene.hpp
+  Core/GameEngine.h
 
 CMakeFiles/Game.dir/Core/Texture.cpp.o: Core/Texture.cpp \
   /usr/include/stdc-predef.h \
@@ -4539,7 +4537,8 @@ CMakeFiles/Game.dir/main.cpp.o: main.cpp \
   /usr/include/c++/11/bits/unordered_set.h \
   Core/Scene/Components.hpp \
   Core/GameEngine.h \
-  Core/Core.h
+  Core/Core.h \
+  Core/Scene/Entity.hpp
 
 
 Core/stb/stb_image.cpp:

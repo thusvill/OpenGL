@@ -6,7 +6,6 @@
 #ifndef GAME_ENTITY_HPP
 #define GAME_ENTITY_HPP
 #include "../GameEngine.h"
-#include "Scene.hpp"
 
 class Scene;
 class Entity {
@@ -14,6 +13,11 @@ public:
     Entity(entt::entity handle, Scene* scene);
     Entity(const Entity& other) = default;
 
+    template<typename T>
+    bool HasComponent();
+
+    template<typename T, typename... Args>
+    T& AddComponent(Args&&... args);
 
 
 private:
