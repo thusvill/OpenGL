@@ -1,7 +1,9 @@
 //
 // Created by bios on 9/2/23.
 //
-#include "Scene.hpp"
+#include "Scene.h"
+
+#include "Components.h"
 
 Scene::Scene() {
     auto entity = m_Registry.create();
@@ -13,6 +15,11 @@ Scene::~Scene() {
 
 }
 
-entt::entity Scene::CreateEntity() {
-    return m_Registry.create();
+Entity Scene::CreateEntity(const std::string& name) {
+    Entity entity  = {m_Registry.create(), this};
+    entity.AddComponent<Transform>();
+    auto& tag = entity.AddComponent<TagComponent>();
+    tag.Tag = name.empty() ? "Entity" : name;
+
+    return entity;
 }

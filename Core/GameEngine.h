@@ -12,9 +12,10 @@
 
 #include "Model.h"
 #include "FBO.h"
-#include "Scene/Scene.hpp"
+#include "Scene/Scene.h"
+#include "Scene/Entity.h"
+#include "Scene/Components.h"
 #include "Core.h"
-#include "Scene/Entity.hpp"
 
 extern int selectedLightType;
 extern int cullType;

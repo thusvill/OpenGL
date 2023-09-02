@@ -1619,7 +1619,7 @@ CMakeFiles/Game.dir/Core/Model.cpp.o: Core/Model.cpp \
 
 CMakeFiles/Game.dir/Core/Scene/Entity.cpp.o: Core/Scene/Entity.cpp \
   /usr/include/stdc-predef.h \
-  Core/Scene/Entity.hpp \
+  Core/Scene/Entity.h \
   Core/GameEngine.h \
   imgui/imgui.h \
   imgui/imconfig.h \
@@ -2220,7 +2220,7 @@ CMakeFiles/Game.dir/Core/Scene/Entity.cpp.o: Core/Scene/Entity.cpp \
   Core/Texture.h \
   Core/stb/stb_image.h \
   Core/FBO.h \
-  Core/Scene/Scene.hpp \
+  Core/Scene/Scene.h \
   Core/entt/entt.hpp \
   /usr/include/c++/11/deque \
   /usr/include/c++/11/bits/stl_deque.h \
@@ -2233,13 +2233,14 @@ CMakeFiles/Game.dir/Core/Scene/Entity.cpp.o: Core/Scene/Entity.cpp \
   /usr/include/c++/11/bits/stl_multiset.h \
   /usr/include/c++/11/unordered_set \
   /usr/include/c++/11/bits/unordered_set.h \
-  Core/Scene/Components.hpp \
+  Core/Scene/Components.h \
   Core/GameEngine.h \
-  Core/Core.h
+  Core/Core.h \
+  Core/Scene/Entity.inl
 
 CMakeFiles/Game.dir/Core/Scene/Scene.cpp.o: Core/Scene/Scene.cpp \
   /usr/include/stdc-predef.h \
-  Core/Scene/Scene.hpp \
+  Core/Scene/Scene.h \
   Core/entt/entt.hpp \
   /usr/include/c++/11/cstdint \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -2505,7 +2506,7 @@ CMakeFiles/Game.dir/Core/Scene/Scene.cpp.o: Core/Scene/Scene.cpp \
   /usr/include/c++/11/bits/stl_multiset.h \
   /usr/include/c++/11/unordered_set \
   /usr/include/c++/11/bits/unordered_set.h \
-  Core/Scene/Components.hpp \
+  Core/Scene/Components.h \
   Core/GameEngine.h \
   imgui/imgui.h \
   imgui/imconfig.h \
@@ -2853,10 +2854,11 @@ CMakeFiles/Game.dir/Core/Scene/Scene.cpp.o: Core/Scene/Scene.cpp \
   Core/Texture.h \
   Core/stb/stb_image.h \
   Core/FBO.h \
-  Core/Scene/Scene.hpp \
-  Core/Core.h \
-  Core/Scene/Entity.hpp \
-  Core/GameEngine.h
+  Core/Scene/Scene.h \
+  Core/Scene/Entity.h \
+  Core/GameEngine.h \
+  Core/Scene/Components.h \
+  Core/Core.h
 
 CMakeFiles/Game.dir/Core/Texture.cpp.o: Core/Texture.cpp \
   /usr/include/stdc-predef.h \
@@ -4522,7 +4524,7 @@ CMakeFiles/Game.dir/main.cpp.o: main.cpp \
   Core/Texture.h \
   Core/stb/stb_image.h \
   Core/FBO.h \
-  Core/Scene/Scene.hpp \
+  Core/Scene/Scene.h \
   Core/entt/entt.hpp \
   /usr/include/c++/11/deque \
   /usr/include/c++/11/bits/stl_deque.h \
@@ -4535,10 +4537,10 @@ CMakeFiles/Game.dir/main.cpp.o: main.cpp \
   /usr/include/c++/11/bits/stl_multiset.h \
   /usr/include/c++/11/unordered_set \
   /usr/include/c++/11/bits/unordered_set.h \
-  Core/Scene/Components.hpp \
+  Core/Scene/Entity.h \
   Core/GameEngine.h \
-  Core/Core.h \
-  Core/Scene/Entity.hpp
+  Core/Scene/Components.h \
+  Core/Core.h
 
 
 Core/stb/stb_image.cpp:
@@ -4550,6 +4552,8 @@ Core/VAO.cpp:
 Core/Texture.cpp:
 
 Core/Scene/Scene.cpp:
+
+Core/Scene/Entity.inl:
 
 Core/Core.h:
 
@@ -4564,6 +4568,8 @@ Core/Core.h:
 /usr/include/c++/11/deque:
 
 Core/entt/entt.hpp:
+
+Core/Scene/Scene.h:
 
 imgui/imstb_textedit.h:
 
@@ -4822,8 +4828,6 @@ imgui/imgui_impl_opengl3.h:
 /usr/include/glm/ext/quaternion_float_precision.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/adxintrin.h:
-
-Core/Scene/Scene.hpp:
 
 /usr/include/glm/ext/matrix_float2x4.hpp:
 
@@ -5443,6 +5447,8 @@ Core/json/json.h:
 
 Core/shaderClass.h:
 
+Core/Scene/Components.h:
+
 /usr/include/c++/11/istream:
 
 /usr/include/c++/11/ios:
@@ -5759,7 +5765,9 @@ imgui/imgui_internal.h:
 
 Core/Scene/Entity.cpp:
 
-Core/Scene/Entity.hpp:
+Core/Scene/Entity.h:
+
+imgui/imgui_impl_glfw.h:
 
 Core/GameEngine.h:
 
@@ -5767,11 +5775,7 @@ imgui/imgui.h:
 
 imgui/imconfig.h:
 
-Core/Scene/Components.hpp:
-
 /usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitintrin.h:
-
-imgui/imgui_impl_glfw.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/immintrin.h:
 

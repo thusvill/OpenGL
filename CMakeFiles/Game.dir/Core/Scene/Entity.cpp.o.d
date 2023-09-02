@@ -1,7 +1,7 @@
 CMakeFiles/Game.dir/Core/Scene/Entity.cpp.o: \
  /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Entity.cpp \
  /usr/include/stdc-predef.h \
- /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Entity.hpp \
+ /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Entity.h \
  /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../GameEngine.h \
  /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../../imgui/imgui.h \
  /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../../imgui/imconfig.h \
@@ -509,7 +509,7 @@ CMakeFiles/Game.dir/Core/Scene/Entity.cpp.o: \
  /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../Texture.h \
  /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../stb/stb_image.h \
  /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../FBO.h \
- /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../Scene/Scene.hpp \
+ /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../Scene/Scene.h \
  /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../Scene/../entt/entt.hpp \
  /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
  /usr/include/c++/11/bits/deque.tcc /usr/include/c++/11/list \
@@ -518,6 +518,7 @@ CMakeFiles/Game.dir/Core/Scene/Entity.cpp.o: \
  /usr/include/c++/11/bits/stl_multiset.h \
  /usr/include/c++/11/unordered_set \
  /usr/include/c++/11/bits/unordered_set.h \
- /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../Scene/Components.hpp \
+ /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../Scene/Components.h \
  /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../Scene/../GameEngine.h \
- /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../Core.h
+ /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../Core.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Entity.inl

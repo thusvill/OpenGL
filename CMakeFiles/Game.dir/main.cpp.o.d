@@ -506,7 +506,7 @@ CMakeFiles/Game.dir/main.cpp.o: \
  /home/bios/CLionProjects/Game/OpenGL/Core/Texture.h \
  /home/bios/CLionProjects/Game/OpenGL/Core/stb/stb_image.h \
  /home/bios/CLionProjects/Game/OpenGL/Core/FBO.h \
- /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Scene.hpp \
+ /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Scene.h \
  /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../entt/entt.hpp \
  /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
  /usr/include/c++/11/bits/deque.tcc /usr/include/c++/11/list \
@@ -515,7 +515,8 @@ CMakeFiles/Game.dir/main.cpp.o: \
  /usr/include/c++/11/bits/stl_multiset.h \
  /usr/include/c++/11/unordered_set \
  /usr/include/c++/11/bits/unordered_set.h \
- /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Components.hpp \
+ /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Entity.h \
  /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../GameEngine.h \
- /home/bios/CLionProjects/Game/OpenGL/Core/Core.h \
- /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Entity.hpp
+ /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Entity.inl \
+ /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Components.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/Core.h

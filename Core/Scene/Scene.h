@@ -6,14 +6,14 @@
 #define GAME_SCENE_HPP
 
 #include "../entt/entt.hpp"
-#include "Components.hpp"
 
+class Entity;
 class Scene{
 public:
     Scene();
     ~Scene();
 
-    entt::entity CreateEntity();
+    Entity CreateEntity(const std::string& name = "");
 
 private:
     entt::registry m_Registry;

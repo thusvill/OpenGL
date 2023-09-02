@@ -10,6 +10,7 @@
 class Scene;
 class Entity {
 public:
+    Entity() = default;
     Entity(entt::entity handle, Scene* scene);
     Entity(const Entity& other) = default;
 
@@ -19,11 +20,17 @@ public:
     template<typename T, typename... Args>
     T& AddComponent(Args&&... args);
 
+    template<typename T>
+    T& GetComponent();
+
+    template<typename T>
+    T& RemoveComponent();
 
 private:
-    entt::entity m_EntityHandle;
-    Scene* m_Scene;
+    entt::entity m_EntityHandle{ 0 };
+    Scene* m_Scene = nullptr;
 };
 
+#include "Entity.inl"
 
 #endif //GAME_ENTITY_HPP

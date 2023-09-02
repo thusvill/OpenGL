@@ -177,7 +177,8 @@ float light_intensity = 1.0f;
          */
 
         Model plane("../Models/statue/scene.gltf");
-        Entity model = {m_ActiveScene->CreateEntity(), m_ActiveScene.get()};
+        auto model = m_ActiveScene->CreateEntity("model");
+
         plane.Position(shaderProgram, glm::vec3(0.001f));
         plane.Rotation(shaderProgram, glm::vec3(0.001f));
 
