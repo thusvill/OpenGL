@@ -5,7 +5,7 @@
 
 #include "Components.h"
 
-Scene::Scene() {
+Scene::Scene(Camera camera): m_currentCamera(camera) {
     auto entity = m_Registry.create();
     m_Registry.emplace<Transform>(entity);
     std::cout<<"Scene created"<<std::endl;
@@ -24,6 +24,12 @@ Entity Scene::CreateEntity(const std::string& name) {
     return entity;
 }
 
-void Scene::OnUpdate() {
+void Scene::OnDraw() {
 
+
+    auto group = m_Registry.group<Transform>(entt::get<MeshRenderer>);
+    for (auto entity: group) {
+        MeshRenderer &meshRenderer = group.get<MeshRenderer>(entity);
+        meshRenderer.mesh.Draw(meshRenderer.shader, m_currentCamera);
+    }
 }

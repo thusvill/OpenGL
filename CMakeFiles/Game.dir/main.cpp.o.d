@@ -515,6 +515,7 @@ CMakeFiles/Game.dir/main.cpp.o: \
  /usr/include/c++/11/bits/stl_multiset.h \
  /usr/include/c++/11/unordered_set \
  /usr/include/c++/11/bits/unordered_set.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../Camera.h \
  /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Entity.h \
  /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../GameEngine.h \
  /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Entity.inl \

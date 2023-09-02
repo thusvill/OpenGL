@@ -26,11 +26,10 @@ struct Transform{
 struct MeshRenderer{
     Model mesh;
     Shader shader;
-    Camera camera;
 
     MeshRenderer() =  default;
     MeshRenderer(const MeshRenderer&) = default;
-    MeshRenderer(Model new_mesh, Shader newShader, Camera cam): mesh(new_mesh), shader(newShader), camera(cam){};
+    MeshRenderer(Model new_mesh, Shader newShader): mesh(new_mesh), shader(newShader){};
 
 };
 

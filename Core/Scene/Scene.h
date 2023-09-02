@@ -6,15 +6,20 @@
 #define GAME_SCENE_HPP
 
 #include "../entt/entt.hpp"
+#include "../Camera.h"
 
 class Entity;
+class Camera;
 class Scene{
 public:
-    Scene();
+    Scene(Camera camera);
     ~Scene();
+
+    Camera m_currentCamera;
 
     Entity CreateEntity(const std::string& name = "");
 
+    void OnDraw();
     void OnUpdate();
 
 private:

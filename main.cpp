@@ -112,7 +112,7 @@ float light_intensity = 1.0f;
 
     int main() {
 
-        m_ActiveScene = CreateRef<Scene>();
+        ;
 
         glfwInit();
         glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
@@ -170,15 +170,16 @@ float light_intensity = 1.0f;
         Camera camera(Width, Height, glm::vec3(2.07479f, 1.249f, -0.381916f), 45.0f, 0.1f, 1000.0f);
         camera.Orientation = glm::vec3(-4.71458f, -1.41498f, 0.173473f);
 
+        m_ActiveScene = CreateRef<Scene>(camera);
+
         /*
          * Rotation x: 3.24507y: -2.10654z: 3.19486
             Position x:-4.46584 y:4.58132 z:-4.38143
 
          */
 
-        Model plane("../Models/statue/scene.gltf");
         auto model = m_ActiveScene->CreateEntity("model");
-        model.AddComponent<MeshRenderer>(plane, shaderProgram, camera);
+        model.AddComponent<MeshRenderer>(Model("../Models/statue/scene.gltf"), shaderProgram);
         Model model_m = model.GetComponent<MeshRenderer>().mesh;
         model_m.Position(shaderProgram, glm::vec3(0.001f));
         model_m.Rotation(shaderProgram, glm::vec3(0.001f));
@@ -224,8 +225,9 @@ float light_intensity = 1.0f;
                 glClearColor(0.07f, 0.13f, 0.17f, 1.0f);
                 glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
                 //plane.Draw(shaderProgram, camera);
-                m_ActiveScene->OnUpdate();
-                model_m.Draw(shaderProgram, camera);
+                m_ActiveScene->m_currentCamera = camera;
+                m_ActiveScene->OnDraw();
+                //model_m.Draw(shaderProgram, camera);
                 if (debug_draw)
                     model_m.Draw(normalsShaderProgram, camera);
             }
