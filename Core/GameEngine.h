@@ -23,6 +23,7 @@ extern char path[1024];
 extern glm::vec3 model_position;
 extern glm::vec3 model_rotation;
 extern glm::vec3 model_scale;
+extern float light_intensity;
 
 
 

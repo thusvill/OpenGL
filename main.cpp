@@ -108,6 +108,7 @@ char path[1024] = "map";
 glm::vec3 model_position = glm::vec3(0.0f);
 glm::vec3 model_rotation = glm::vec3(0.0f);
 glm::vec3 model_scale = glm::vec3(1.0f);
+float light_intensity = 1.0f;
 
     int main() {
 
@@ -258,9 +259,9 @@ glm::vec3 model_scale = glm::vec3(1.0f);
                     plane.Position(shaderProgram, model_position);
                     plane.Position(normalsShaderProgram, model_position);
 
-                    glm::vec3 rotation_in_deg = glm::degrees(model_rotation);
-                    DrawVec3Controls("Rotation", rotation_in_deg);
-                    model_rotation = rotation_in_deg;
+                    //glm::vec3 rotation_in_deg = glm::degrees(model_rotation);
+                    DrawVec3Controls("Rotation", model_rotation);
+                    //model_rotation = rotation_in_deg;
                     plane.Rotation(shaderProgram, model_rotation);
                     plane.Rotation(normalsShaderProgram, model_rotation);
 
@@ -294,7 +295,10 @@ glm::vec3 model_scale = glm::vec3(1.0f);
                     }
 
                     ImGui::ColorEdit4("Light Color", glm::value_ptr(lightColor));
-                    ImGui::DragFloat3("Position", glm::value_ptr(lightPos), 0.5f, -10.0f, 10.0f);
+                    ImGui::DragFloat("Intensity", &light_intensity, 0.5f);
+                    glUniform1f(glGetUniformLocation(shaderProgram.ID, "intensity"), light_intensity);
+                    //ImGui::DragFloat3("Position", glm::value_ptr(lightPos), 0.5f, -10.0f, 10.0f);
+                    DrawVec3Controls("Light Position",lightPos);
                     UpdateLight(lightColor, lightPos, shaderProgram);
 
                     ImGui::End();
@@ -302,17 +306,13 @@ glm::vec3 model_scale = glm::vec3(1.0f);
                 //Camera
                 {
                     ImGui::Begin("Camera");
-                    ImGui::Text("Camera Position: (%.2f, %.2f, %.2f)", camera.Position.x, camera.Position.y,
-                                camera.Position.z);
-                    ImGui::Text("Camera Rotation: (%.2f, %.2f, %.2f)", camera.Orientation.x, camera.Orientation.y,
-                                camera.Orientation.z);
+                    //ImGui::Text("Camera Position: (%.2f, %.2f, %.2f)", camera.Position.x, camera.Position.y,camera.Position.z);
+                    DrawVec3Controls("Camera Position", camera.Position);
+                    //ImGui::Text("Camera Rotation: (%.2f, %.2f, %.2f)", camera.Orientation.x, camera.Orientation.y,camera.Orientation.z);
+                    DrawVec3Controls("Camera Position", camera.Orientation);
                     if (ImGui::Button("Reset to preset")) {
                         camera.Position = glm::vec3(2.07479f, 1.249f, -0.381916f);
                         camera.Orientation = glm::vec3(-4.71458f, -1.41498f, 0.173473f);
-                    }
-                    if (ImGui::Button("Reset to 0")) {
-                        camera.Position = glm::vec3(0.0f);
-                        camera.Orientation = glm::vec3(0.0f);
                     }
 
                     ImGui::Separator();

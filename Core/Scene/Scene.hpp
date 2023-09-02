@@ -15,6 +15,7 @@ public:
 
 private:
     entt::registry m_Registry;
+    friend class Entity;
 };
 
 #endif //GAME_SCENE_HPP

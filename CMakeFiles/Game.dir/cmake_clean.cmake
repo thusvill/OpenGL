@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Game.dir/Core/Mesh.cpp.o.d"
   "CMakeFiles/Game.dir/Core/Model.cpp.o"
   "CMakeFiles/Game.dir/Core/Model.cpp.o.d"
+  "CMakeFiles/Game.dir/Core/Scene/Entity.cpp.o"
+  "CMakeFiles/Game.dir/Core/Scene/Entity.cpp.o.d"
   "CMakeFiles/Game.dir/Core/Scene/Scene.cpp.o"
   "CMakeFiles/Game.dir/Core/Scene/Scene.cpp.o.d"
   "CMakeFiles/Game.dir/Core/Texture.cpp.o"
