@@ -517,4 +517,6 @@ CMakeFiles/Game.dir/main.cpp.o: \
  /usr/include/c++/11/bits/unordered_set.h \
  /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Components.hpp \
  /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../GameEngine.h \
- /home/bios/CLionProjects/Game/OpenGL/Core/Core.h
+ /home/bios/CLionProjects/Game/OpenGL/Core/Core.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Entity.hpp \
+ /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Scene.hpp

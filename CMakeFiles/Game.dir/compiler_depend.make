@@ -2855,7 +2855,10 @@ CMakeFiles/Game.dir/Core/Scene/Scene.cpp.o: Core/Scene/Scene.cpp \
   Core/stb/stb_image.h \
   Core/FBO.h \
   Core/Scene/Scene.hpp \
-  Core/Core.h
+  Core/Core.h \
+  Core/Scene/Entity.hpp \
+  Core/GameEngine.h \
+  Core/Scene/Scene.hpp
 
 CMakeFiles/Game.dir/Core/Texture.cpp.o: Core/Texture.cpp \
   /usr/include/stdc-predef.h \

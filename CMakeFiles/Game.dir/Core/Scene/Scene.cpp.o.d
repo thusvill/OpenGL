@@ -520,4 +520,7 @@ CMakeFiles/Game.dir/Core/Scene/Scene.cpp.o: \
  /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../stb/stb_image.h \
  /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../FBO.h \
  /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../Scene/Scene.hpp \
- /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../Core.h
+ /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../Core.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../Scene/Entity.hpp \
+ /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../Scene/../GameEngine.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/Scene/../Scene/Scene.hpp

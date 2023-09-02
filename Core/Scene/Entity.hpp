@@ -8,10 +8,10 @@
 #include "../GameEngine.h"
 #include "Scene.hpp"
 
-
+class Scene;
 class Entity {
 public:
-    Entity();
+    Entity(entt::entity handle, Scene* scene);
     Entity(const Entity& other) = default;
 
 

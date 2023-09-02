@@ -104,7 +104,7 @@ int selectedLightType = 0;
 int cullType = 0;
 int camType = 0;
 int cullFace = 0;
-char path[1024] = "map";
+char path[1024] = "model_path";
 glm::vec3 model_position = glm::vec3(0.0f);
 glm::vec3 model_rotation = glm::vec3(0.0f);
 glm::vec3 model_scale = glm::vec3(1.0f);
@@ -177,6 +177,7 @@ float light_intensity = 1.0f;
          */
 
         Model plane("../Models/statue/scene.gltf");
+        Entity model = {m_ActiveScene->CreateEntity(), m_ActiveScene.get()};
         plane.Position(shaderProgram, glm::vec3(0.001f));
         plane.Rotation(shaderProgram, glm::vec3(0.001f));
 

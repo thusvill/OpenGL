@@ -13,6 +13,8 @@ public:
     Scene();
     ~Scene();
 
+    entt::entity CreateEntity();
+
 private:
     entt::registry m_Registry;
     friend class Entity;

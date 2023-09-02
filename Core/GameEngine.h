@@ -14,6 +14,7 @@
 #include "FBO.h"
 #include "Scene/Scene.hpp"
 #include "Core.h"
+#include "Scene/Entity.hpp"
 
 extern int selectedLightType;
 extern int cullType;
