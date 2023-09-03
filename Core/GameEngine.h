@@ -28,7 +28,6 @@ extern glm::vec3 model_scale;
 extern float light_intensity;
 
 
-
     static void DrawVec3Controls(const std::string &label, glm::vec3 &values, float resetValues = 0.0f,
                                  float columnWidth = 100.0f) {
 

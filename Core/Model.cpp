@@ -22,6 +22,8 @@ void Model::Draw(Shader &shader, Camera &camera) {
     }
 }
 
+
+
 void Model::Position(Shader shader, glm::vec3 newPosition) {
 
     GLuint modelMatrixLocation = glGetUniformLocation(shader.ID, "newPos");
@@ -29,11 +31,11 @@ void Model::Position(Shader shader, glm::vec3 newPosition) {
     glUniformMatrix4fv(modelMatrixLocation, 1, GL_FALSE, glm::value_ptr(newModelMatrix));
 }
 
-void Model::Rotation(Shader shader, glm::vec3 rotation) {
+void Model::Rotation(Shader shader, glm::vec3 newRotation) {
     GLuint modelMatrixLocation = glGetUniformLocation(shader.ID, "newRot");
-    glm::mat4 newModelMatrix = glm::rotate(glm::mat4(1.0f), rotation.x, {1,0,0})
-            *glm::rotate(glm::mat4(1.0f), rotation.y, {0,1,0})
-            *glm::rotate(glm::mat4(1.0f), rotation.z, {0,0,1});
+    glm::mat4 newModelMatrix = glm::rotate(glm::mat4(1.0f), newRotation.x, {1,0,0})
+            *glm::rotate(glm::mat4(1.0f), newRotation.y, {0,1,0})
+            *glm::rotate(glm::mat4(1.0f), newRotation.z, {0,0,1});
     glUniformMatrix4fv(modelMatrixLocation, 1, GL_FALSE, glm::value_ptr(newModelMatrix));
 }
 
@@ -41,6 +43,11 @@ void Model::Scale(Shader shader, glm::vec3 newScale) {
     GLuint modelMatrixLocation = glGetUniformLocation(shader.ID, "newScale");
     glm::mat4 newModelMatrix = glm::scale(glm::mat4(1.0f), newScale);
     glUniformMatrix4fv(modelMatrixLocation, 1, GL_FALSE, glm::value_ptr(newModelMatrix));
+}
+void Model::SetTransform(Shader shader, glm::vec3 position, glm::vec3 rotation, glm::vec3 scale) {
+    Position(shader, position);
+    Rotation(shader, rotation);
+    Scale(shader, scale);
 }
 
 void Model::loadMesh(unsigned int indMesh) {

@@ -14,12 +14,16 @@
 
 #include "shaderClass.h"
 
+
+
 class Camera {
+
 public:
     enum class CamMode{
         Perspective,
         Orthographic
     };
+
     CamMode mode = CamMode::Perspective;
 
     glm::vec3 Position;

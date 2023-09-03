@@ -105,14 +105,12 @@ int cullType = 0;
 int camType = 0;
 int cullFace = 0;
 char path[1024] = "model_path";
-glm::vec3 model_position = glm::vec3(0.0f);
-glm::vec3 model_rotation = glm::vec3(0.0f);
-glm::vec3 model_scale = glm::vec3(1.0f);
 float light_intensity = 1.0f;
 
     int main() {
-
-        ;
+        Camera camera(Width, Height, glm::vec3(2.07479f, 1.249f, -0.381916f), 45.0f, 0.1f, 1000.0f);
+        camera.Orientation = glm::vec3(-4.71458f, -1.41498f, 0.173473f);
+        m_ActiveScene = CreateRef<Scene>(camera);
 
         glfwInit();
         glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
@@ -167,10 +165,12 @@ float light_intensity = 1.0f;
         glEnable(GL_DEPTH_TEST);
 
 
-        Camera camera(Width, Height, glm::vec3(2.07479f, 1.249f, -0.381916f), 45.0f, 0.1f, 1000.0f);
-        camera.Orientation = glm::vec3(-4.71458f, -1.41498f, 0.173473f);
 
-        m_ActiveScene = CreateRef<Scene>(camera);
+        Entity m_Camera = m_ActiveScene->CreateEntity("Camera Entity");
+        m_Camera.AddComponent<CameraComponent>(camera, true);
+        auto camera_c = m_Camera.GetComponent<CameraComponent>().camera;
+
+
 
         /*
          * Rotation x: 3.24507y: -2.10654z: 3.19486
@@ -181,8 +181,14 @@ float light_intensity = 1.0f;
         auto model = m_ActiveScene->CreateEntity("model");
         model.AddComponent<MeshRenderer>(Model("../Models/statue/scene.gltf"), shaderProgram);
         Model model_m = model.GetComponent<MeshRenderer>().mesh;
-        model_m.Position(shaderProgram, glm::vec3(0.001f));
-        model_m.Rotation(shaderProgram, glm::vec3(0.001f));
+
+        Transform model_t = model.GetComponent<Transform>();
+        model_t.Scale = glm::vec3(1.0f);
+
+        //auto model2 = m_ActiveScene->CreateEntity("model2");
+        //model2.AddComponent<MeshRenderer>(Model("../Models/sword/scene.gltf"), shaderProgram);
+
+
 
         double prevTime = 0.0;
         double crntTime = 0.0;
@@ -215,8 +221,10 @@ float light_intensity = 1.0f;
             glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 
-            camera.Inputs(window);
-            camera.updateMatrix();
+            m_Camera.GetComponent<CameraComponent>().camera.Inputs(window);
+
+            m_ActiveScene->OnUpdate();
+            m_ActiveScene->m_currentCamera = m_Camera.GetComponent<CameraComponent>().camera;
 
             frameBuffer.Bind();
             glEnable(GL_DEPTH_TEST);
@@ -225,9 +233,7 @@ float light_intensity = 1.0f;
                 glClearColor(0.07f, 0.13f, 0.17f, 1.0f);
                 glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
                 //plane.Draw(shaderProgram, camera);
-                m_ActiveScene->m_currentCamera = camera;
                 m_ActiveScene->OnDraw();
-                //model_m.Draw(shaderProgram, camera);
                 if (debug_draw)
                     model_m.Draw(normalsShaderProgram, camera);
             }
@@ -247,8 +253,8 @@ float light_intensity = 1.0f;
 
                     GLuint fboTextureID = frameBuffer.GetTexture();
                     ImVec2 panelSize = ImGui::GetContentRegionAvail();
-                    if (panelSize.x != camera.width || panelSize.y != camera.height) {
-                        camera.Resize(panelSize.x, panelSize.y);
+                    if (panelSize.x != camera_c.width || panelSize.y != camera_c.height) {
+                        camera_c.Resize(panelSize.x, panelSize.y);
                         glViewport(0, 0, panelSize.x, panelSize.y);
                         frameBuffer.Resize(panelSize.x, panelSize.y);
                     }
@@ -264,20 +270,10 @@ float light_intensity = 1.0f;
                     ImGui::Begin("Model");
                     ImGui::Text("%s", model.GetComponent<TagComponent>().Tag.c_str());
                     ImGui::Separator();
-                    DrawVec3Controls("Position", model_position);
-                    model_m.Position(shaderProgram, model_position);
-                    model_m.Position(normalsShaderProgram, model_position);
+                    DrawVec3Controls("Position", model.GetComponent<Transform>().Position);
+                    DrawVec3Controls("Rotation", model.GetComponent<Transform>().Rotation);
+                    DrawVec3Controls("Scale", model.GetComponent<Transform>().Scale, 1.0f);
 
-                    //glm::vec3 rotation_in_deg = glm::degrees(model_rotation);
-                    DrawVec3Controls("Rotation", model_rotation);
-                    //model_rotation = rotation_in_deg;
-                    model_m.Rotation(shaderProgram, model_rotation);
-                    model_m.Rotation(normalsShaderProgram, model_rotation);
-
-                    DrawVec3Controls("Scale", model_scale, 1.0f);
-                    model_m.Scale(shaderProgram, model_scale);
-                    model_m.Scale(normalsShaderProgram, model_scale);
-                    //std::cout<<glm::value_ptr(model_position)<<std::endl;
 
                     ImGui::InputText("Name", path, sizeof(path));
                     if (ImGui::Button("Load")) {
@@ -315,13 +311,13 @@ float light_intensity = 1.0f;
                 //Camera
                 {
                     ImGui::Begin("Camera");
-                    //ImGui::Text("Camera Position: (%.2f, %.2f, %.2f)", camera.Position.x, camera.Position.y,camera.Position.z);
-                    DrawVec3Controls("Camera Position", camera.Position);
-                    //ImGui::Text("Camera Rotation: (%.2f, %.2f, %.2f)", camera.Orientation.x, camera.Orientation.y,camera.Orientation.z);
-                    DrawVec3Controls("Camera Rotation", camera.Orientation);
+                    //ImGui::Text("Camera Position: (%.2f, %.2f, %.2f)", camera_c.Position.x, camera_c.Position.y,camera_c.Position.z);
+                    DrawVec3Controls("Camera Position", m_Camera.GetComponent<CameraComponent>().camera.Position);
+                    //ImGui::Text("Camera Rotation: (%.2f, %.2f, %.2f)", camera_c.Orientation.x, camera_c.Orientation.y,camera_c.Orientation.z);
+                    DrawVec3Controls("Camera Rotation", m_Camera.GetComponent<CameraComponent>().camera.Orientation);
                     if (ImGui::Button("Reset to preset")) {
-                        camera.Position = glm::vec3(2.07479f, 1.249f, -0.381916f);
-                        camera.Orientation = glm::vec3(-4.71458f, -1.41498f, 0.173473f);
+                        camera_c.Position = glm::vec3(2.07479f, 1.249f, -0.381916f);
+                        camera_c.Orientation = glm::vec3(-4.71458f, -1.41498f, 0.173473f);
                     }
 
                     ImGui::Separator();
@@ -329,10 +325,10 @@ float light_intensity = 1.0f;
                     if (ImGui::Combo("Camera type", &camType, cameraType, IM_ARRAYSIZE(cameraType))) {
                         switch (camType) {
                             case 0:
-                                camera.SetCameraMode(Camera::CamMode::Perspective);
+                                camera_c.SetCameraMode(Camera::CamMode::Perspective);
                                 break;
                             case 1:
-                                camera.SetCameraMode(Camera::CamMode::Orthographic);
+                                camera_c.SetCameraMode(Camera::CamMode::Orthographic);
                                 break;
 
                         }
@@ -340,16 +336,16 @@ float light_intensity = 1.0f;
 
                     ImGui::SeparatorText("View");
 
-                    if (camera.mode == Camera::CamMode::Perspective) {
-                        ImGui::DragFloat("FOV", &camera.fov, 1.0f, 5.0f, 180.0f);
+                    if (camera_c.mode == Camera::CamMode::Perspective) {
+                        ImGui::DragFloat("FOV", &camera_c.fov, 1.0f, 5.0f, 180.0f);
                     }
 
-                    ImGui::DragFloat("Near Plane", &camera.nearPlane, 0.1f, 0.1f, 100.0f);
-                    ImGui::DragFloat("Far Plane", &camera.farPlane, 1.0f, 1.0f, 1000.0f);
+                    ImGui::DragFloat("Near Plane", &camera_c.nearPlane, 0.1f, 0.1f, 100.0f);
+                    ImGui::DragFloat("Far Plane", &camera_c.farPlane, 1.0f, 1.0f, 1000.0f);
 
                     ImGui::SeparatorText("Controls");
-                    ImGui::DragFloat("Speed", &camera.speed, 0.01f, 0.01f, 5.0f);
-                    ImGui::DragFloat("Sensitivity", &camera.sensitivity, 0.5f, 1.0f, 100.0f);
+                    ImGui::DragFloat("Speed", &camera_c.speed, 0.01f, 0.01f, 5.0f);
+                    ImGui::DragFloat("Sensitivity", &camera_c.sensitivity, 0.5f, 1.0f, 100.0f);
 
                     ImGui::End();
                 }

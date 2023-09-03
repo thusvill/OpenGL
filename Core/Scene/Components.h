@@ -15,12 +15,14 @@ struct TagComponent{
     TagComponent(const std::string& tag):Tag(tag){};
 };
 
+
 struct Transform{
     glm::vec3 Position;
     glm::vec3 Rotation;
     glm::vec3 Scale;
     Transform() = default;
     Transform(const Transform&) = default;
+    Transform(float scale) :Scale(glm::vec3(scale)){};
 };
 
 struct MeshRenderer{
@@ -30,6 +32,16 @@ struct MeshRenderer{
     MeshRenderer() =  default;
     MeshRenderer(const MeshRenderer&) = default;
     MeshRenderer(Model new_mesh, Shader newShader): mesh(new_mesh), shader(newShader){};
+
+};
+
+struct CameraComponent{
+    Camera camera;
+    bool Primary = true;
+
+    CameraComponent()=default;
+    CameraComponent(const CameraComponent&) =default;
+    CameraComponent(Camera cam, bool primary =  true): camera(cam), Primary(primary){};
 
 };
 

@@ -10,6 +10,7 @@
 
 using json = nlohmann::json;
 
+
 class Model {
 public:
     Model(const char* file);
@@ -17,6 +18,7 @@ public:
     void Position(Shader shader, glm::vec3 newPosition);
     void Rotation(Shader shader, glm::vec3 rotation);
     void Scale(Shader shader, glm::vec3 newScale);
+    void SetTransform(Shader shader, glm::vec3 position,glm::vec3 rotation,glm::vec3 scale);
 
 
 private:
