@@ -25,6 +25,7 @@ public:
 private:
     entt::registry m_Registry;
     friend class Entity;
+    friend class SceneHierarchyPanel;
 };
 
 #endif //GAME_SCENE_HPP

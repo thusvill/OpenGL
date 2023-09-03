@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Game.dir/Core/Camera.cpp.o.d"
   "CMakeFiles/Game.dir/Core/EBO.cpp.o"
   "CMakeFiles/Game.dir/Core/EBO.cpp.o.d"
+  "CMakeFiles/Game.dir/Core/Editor/SceneHierarchyPanel.cpp.o"
+  "CMakeFiles/Game.dir/Core/Editor/SceneHierarchyPanel.cpp.o.d"
   "CMakeFiles/Game.dir/Core/FBO.cpp.o"
   "CMakeFiles/Game.dir/Core/FBO.cpp.o.d"
   "CMakeFiles/Game.dir/Core/Mesh.cpp.o"

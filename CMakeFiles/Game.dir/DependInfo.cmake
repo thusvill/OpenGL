@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/bios/CLionProjects/Game/OpenGL/Core/Camera.cpp" "CMakeFiles/Game.dir/Core/Camera.cpp.o" "gcc" "CMakeFiles/Game.dir/Core/Camera.cpp.o.d"
   "/home/bios/CLionProjects/Game/OpenGL/Core/EBO.cpp" "CMakeFiles/Game.dir/Core/EBO.cpp.o" "gcc" "CMakeFiles/Game.dir/Core/EBO.cpp.o.d"
+  "/home/bios/CLionProjects/Game/OpenGL/Core/Editor/SceneHierarchyPanel.cpp" "CMakeFiles/Game.dir/Core/Editor/SceneHierarchyPanel.cpp.o" "gcc" "CMakeFiles/Game.dir/Core/Editor/SceneHierarchyPanel.cpp.o.d"
   "/home/bios/CLionProjects/Game/OpenGL/Core/FBO.cpp" "CMakeFiles/Game.dir/Core/FBO.cpp.o" "gcc" "CMakeFiles/Game.dir/Core/FBO.cpp.o.d"
   "/home/bios/CLionProjects/Game/OpenGL/Core/Mesh.cpp" "CMakeFiles/Game.dir/Core/Mesh.cpp.o" "gcc" "CMakeFiles/Game.dir/Core/Mesh.cpp.o.d"
   "/home/bios/CLionProjects/Game/OpenGL/Core/Model.cpp" "CMakeFiles/Game.dir/Core/Model.cpp.o" "gcc" "CMakeFiles/Game.dir/Core/Model.cpp.o.d"

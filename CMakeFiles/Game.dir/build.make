@@ -97,10 +97,24 @@ CMakeFiles/Game.dir/Core/EBO.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Core/EBO.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bios/CLionProjects/Game/OpenGL/Core/EBO.cpp -o CMakeFiles/Game.dir/Core/EBO.cpp.s
 
+CMakeFiles/Game.dir/Core/Editor/SceneHierarchyPanel.cpp.o: CMakeFiles/Game.dir/flags.make
+CMakeFiles/Game.dir/Core/Editor/SceneHierarchyPanel.cpp.o: Core/Editor/SceneHierarchyPanel.cpp
+CMakeFiles/Game.dir/Core/Editor/SceneHierarchyPanel.cpp.o: CMakeFiles/Game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bios/CLionProjects/Game/OpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Game.dir/Core/Editor/SceneHierarchyPanel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/Core/Editor/SceneHierarchyPanel.cpp.o -MF CMakeFiles/Game.dir/Core/Editor/SceneHierarchyPanel.cpp.o.d -o CMakeFiles/Game.dir/Core/Editor/SceneHierarchyPanel.cpp.o -c /home/bios/CLionProjects/Game/OpenGL/Core/Editor/SceneHierarchyPanel.cpp
+
+CMakeFiles/Game.dir/Core/Editor/SceneHierarchyPanel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/Core/Editor/SceneHierarchyPanel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bios/CLionProjects/Game/OpenGL/Core/Editor/SceneHierarchyPanel.cpp > CMakeFiles/Game.dir/Core/Editor/SceneHierarchyPanel.cpp.i
+
+CMakeFiles/Game.dir/Core/Editor/SceneHierarchyPanel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/Core/Editor/SceneHierarchyPanel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bios/CLionProjects/Game/OpenGL/Core/Editor/SceneHierarchyPanel.cpp -o CMakeFiles/Game.dir/Core/Editor/SceneHierarchyPanel.cpp.s
+
 CMakeFiles/Game.dir/Core/FBO.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/Core/FBO.cpp.o: Core/FBO.cpp
 CMakeFiles/Game.dir/Core/FBO.cpp.o: CMakeFiles/Game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bios/CLionProjects/Game/OpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Game.dir/Core/FBO.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bios/CLionProjects/Game/OpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Game.dir/Core/FBO.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/Core/FBO.cpp.o -MF CMakeFiles/Game.dir/Core/FBO.cpp.o.d -o CMakeFiles/Game.dir/Core/FBO.cpp.o -c /home/bios/CLionProjects/Game/OpenGL/Core/FBO.cpp
 
 CMakeFiles/Game.dir/Core/FBO.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/Game.dir/Core/FBO.cpp.s: cmake_force
 CMakeFiles/Game.dir/Core/Mesh.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/Core/Mesh.cpp.o: Core/Mesh.cpp
 CMakeFiles/Game.dir/Core/Mesh.cpp.o: CMakeFiles/Game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bios/CLionProjects/Game/OpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Game.dir/Core/Mesh.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bios/CLionProjects/Game/OpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Game.dir/Core/Mesh.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/Core/Mesh.cpp.o -MF CMakeFiles/Game.dir/Core/Mesh.cpp.o.d -o CMakeFiles/Game.dir/Core/Mesh.cpp.o -c /home/bios/CLionProjects/Game/OpenGL/Core/Mesh.cpp
 
 CMakeFiles/Game.dir/Core/Mesh.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/Game.dir/Core/Mesh.cpp.s: cmake_force
 CMakeFiles/Game.dir/Core/Model.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/Core/Model.cpp.o: Core/Model.cpp
 CMakeFiles/Game.dir/Core/Model.cpp.o: CMakeFiles/Game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bios/CLionProjects/Game/OpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Game.dir/Core/Model.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bios/CLionProjects/Game/OpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Game.dir/Core/Model.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/Core/Model.cpp.o -MF CMakeFiles/Game.dir/Core/Model.cpp.o.d -o CMakeFiles/Game.dir/Core/Model.cpp.o -c /home/bios/CLionProjects/Game/OpenGL/Core/Model.cpp
 
 CMakeFiles/Game.dir/Core/Model.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/Game.dir/Core/Model.cpp.s: cmake_force
 CMakeFiles/Game.dir/Core/Scene/Entity.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/Core/Scene/Entity.cpp.o: Core/Scene/Entity.cpp
 CMakeFiles/Game.dir/Core/Scene/Entity.cpp.o: CMakeFiles/Game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bios/CLionProjects/Game/OpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Game.dir/Core/Scene/Entity.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bios/CLionProjects/Game/OpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Game.dir/Core/Scene/Entity.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/Core/Scene/Entity.cpp.o -MF CMakeFiles/Game.dir/Core/Scene/Entity.cpp.o.d -o CMakeFiles/Game.dir/Core/Scene/Entity.cpp.o -c /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Entity.cpp
 
 CMakeFiles/Game.dir/Core/Scene/Entity.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/Game.dir/Core/Scene/Entity.cpp.s: cmake_force
 CMakeFiles/Game.dir/Core/Scene/Scene.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/Core/Scene/Scene.cpp.o: Core/Scene/Scene.cpp
 CMakeFiles/Game.dir/Core/Scene/Scene.cpp.o: CMakeFiles/Game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bios/CLionProjects/Game/OpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Game.dir/Core/Scene/Scene.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bios/CLionProjects/Game/OpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Game.dir/Core/Scene/Scene.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/Core/Scene/Scene.cpp.o -MF CMakeFiles/Game.dir/Core/Scene/Scene.cpp.o.d -o CMakeFiles/Game.dir/Core/Scene/Scene.cpp.o -c /home/bios/CLionProjects/Game/OpenGL/Core/Scene/Scene.cpp
 
 CMakeFiles/Game.dir/Core/Scene/Scene.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/Game.dir/Core/Scene/Scene.cpp.s: cmake_force
 CMakeFiles/Game.dir/Core/Texture.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/Core/Texture.cpp.o: Core/Texture.cpp
 CMakeFiles/Game.dir/Core/Texture.cpp.o: CMakeFiles/Game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bios/CLionProjects/Game/OpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Game.dir/Core/Texture.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bios/CLionProjects/Game/OpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Game.dir/Core/Texture.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/Core/Texture.cpp.o -MF CMakeFiles/Game.dir/Core/Texture.cpp.o.d -o CMakeFiles/Game.dir/Core/Texture.cpp.o -c /home/bios/CLionProjects/Game/OpenGL/Core/Texture.cpp
 
 CMakeFiles/Game.dir/Core/Texture.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/Game.dir/Core/Texture.cpp.s: cmake_force
 CMakeFiles/Game.dir/Core/VAO.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/Core/VAO.cpp.o: Core/VAO.cpp
 CMakeFiles/Game.dir/Core/VAO.cpp.o: CMakeFiles/Game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bios/CLionProjects/Game/OpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Game.dir/Core/VAO.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bios/CLionProjects/Game/OpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Game.dir/Core/VAO.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/Core/VAO.cpp.o -MF CMakeFiles/Game.dir/Core/VAO.cpp.o.d -o CMakeFiles/Game.dir/Core/VAO.cpp.o -c /home/bios/CLionProjects/Game/OpenGL/Core/VAO.cpp
 
 CMakeFiles/Game.dir/Core/VAO.cpp.i: cmake_force
@@ -198,7 +212,7 @@ CMakeFiles/Game.dir/Core/VAO.cpp.s: cmake_force
 CMakeFiles/Game.dir/Core/VBO.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/Core/VBO.cpp.o: Core/VBO.cpp
 CMakeFiles/Game.dir/Core/VBO.cpp.o: CMakeFiles/Game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bios/CLionProjects/Game/OpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Game.dir/Core/VBO.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bios/CLionProjects/Game/OpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Game.dir/Core/VBO.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/Core/VBO.cpp.o -MF CMakeFiles/Game.dir/Core/VBO.cpp.o.d -o CMakeFiles/Game.dir/Core/VBO.cpp.o -c /home/bios/CLionProjects/Game/OpenGL/Core/VBO.cpp
 
 CMakeFiles/Game.dir/Core/VBO.cpp.i: cmake_force
@@ -212,7 +226,7 @@ CMakeFiles/Game.dir/Core/VBO.cpp.s: cmake_force
 CMakeFiles/Game.dir/Core/shaderClass.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/Core/shaderClass.cpp.o: Core/shaderClass.cpp
 CMakeFiles/Game.dir/Core/shaderClass.cpp.o: CMakeFiles/Game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bios/CLionProjects/Game/OpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Game.dir/Core/shaderClass.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bios/CLionProjects/Game/OpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Game.dir/Core/shaderClass.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/Core/shaderClass.cpp.o -MF CMakeFiles/Game.dir/Core/shaderClass.cpp.o.d -o CMakeFiles/Game.dir/Core/shaderClass.cpp.o -c /home/bios/CLionProjects/Game/OpenGL/Core/shaderClass.cpp
 
 CMakeFiles/Game.dir/Core/shaderClass.cpp.i: cmake_force
@@ -226,7 +240,7 @@ CMakeFiles/Game.dir/Core/shaderClass.cpp.s: cmake_force
 CMakeFiles/Game.dir/Core/stb/stb_image.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/Core/stb/stb_image.cpp.o: Core/stb/stb_image.cpp
 CMakeFiles/Game.dir/Core/stb/stb_image.cpp.o: CMakeFiles/Game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bios/CLionProjects/Game/OpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Game.dir/Core/stb/stb_image.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bios/CLionProjects/Game/OpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Game.dir/Core/stb/stb_image.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/Core/stb/stb_image.cpp.o -MF CMakeFiles/Game.dir/Core/stb/stb_image.cpp.o.d -o CMakeFiles/Game.dir/Core/stb/stb_image.cpp.o -c /home/bios/CLionProjects/Game/OpenGL/Core/stb/stb_image.cpp
 
 CMakeFiles/Game.dir/Core/stb/stb_image.cpp.i: cmake_force
@@ -240,7 +254,7 @@ CMakeFiles/Game.dir/Core/stb/stb_image.cpp.s: cmake_force
 CMakeFiles/Game.dir/main.cpp.o: CMakeFiles/Game.dir/flags.make
 CMakeFiles/Game.dir/main.cpp.o: main.cpp
 CMakeFiles/Game.dir/main.cpp.o: CMakeFiles/Game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bios/CLionProjects/Game/OpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Game.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bios/CLionProjects/Game/OpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Game.dir/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/main.cpp.o -MF CMakeFiles/Game.dir/main.cpp.o.d -o CMakeFiles/Game.dir/main.cpp.o -c /home/bios/CLionProjects/Game/OpenGL/main.cpp
 
 CMakeFiles/Game.dir/main.cpp.i: cmake_force
@@ -255,6 +269,7 @@ CMakeFiles/Game.dir/main.cpp.s: cmake_force
 Game_OBJECTS = \
 "CMakeFiles/Game.dir/Core/Camera.cpp.o" \
 "CMakeFiles/Game.dir/Core/EBO.cpp.o" \
+"CMakeFiles/Game.dir/Core/Editor/SceneHierarchyPanel.cpp.o" \
 "CMakeFiles/Game.dir/Core/FBO.cpp.o" \
 "CMakeFiles/Game.dir/Core/Mesh.cpp.o" \
 "CMakeFiles/Game.dir/Core/Model.cpp.o" \
@@ -272,6 +287,7 @@ Game_EXTERNAL_OBJECTS =
 
 Game: CMakeFiles/Game.dir/Core/Camera.cpp.o
 Game: CMakeFiles/Game.dir/Core/EBO.cpp.o
+Game: CMakeFiles/Game.dir/Core/Editor/SceneHierarchyPanel.cpp.o
 Game: CMakeFiles/Game.dir/Core/FBO.cpp.o
 Game: CMakeFiles/Game.dir/Core/Mesh.cpp.o
 Game: CMakeFiles/Game.dir/Core/Model.cpp.o
@@ -290,7 +306,7 @@ Game: libimgui.a
 Game: /usr/lib/x86_64-linux-gnu/libGLX.so
 Game: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 Game: CMakeFiles/Game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bios/CLionProjects/Game/OpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable Game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bios/CLionProjects/Game/OpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable Game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

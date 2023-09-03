@@ -1,5 +1,5 @@
 #include "Core/GameEngine.h"
-
+#include "Core/Editor/SceneHierarchyPanel.h"
 
     const unsigned int Width = 1920;
     const unsigned int Height = 1080;
@@ -100,6 +100,7 @@
     }
 
     Ref<Scene> m_ActiveScene;
+    SceneHierarchyPanel m_Panel;
 int selectedLightType = 0;
 int cullType = 0;
 int camType = 0;
@@ -111,6 +112,7 @@ float light_intensity = 1.0f;
         Camera camera(Width, Height, glm::vec3(2.07479f, 1.249f, -0.381916f), 45.0f, 0.1f, 1000.0f);
         camera.Orientation = glm::vec3(-4.71458f, -1.41498f, 0.173473f);
         m_ActiveScene = CreateRef<Scene>(camera);
+        m_Panel.SetContex(m_ActiveScene);
 
         glfwInit();
         glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
@@ -239,6 +241,7 @@ float light_intensity = 1.0f;
             }
             frameBuffer.Unbind();
 
+            //Imgui
             {
 
                 ImGui_ImplOpenGL3_NewFrame();
@@ -246,6 +249,7 @@ float light_intensity = 1.0f;
                 ImGui::NewFrame();
                 Docking();
 
+                m_Panel.OnImguiRender();
                 //Viewport
                 ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0, 0));
                 {

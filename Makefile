@@ -203,6 +203,30 @@ Core/EBO.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Core/EBO.cpp.s
 .PHONY : Core/EBO.cpp.s
 
+Core/Editor/SceneHierarchyPanel.o: Core/Editor/SceneHierarchyPanel.cpp.o
+.PHONY : Core/Editor/SceneHierarchyPanel.o
+
+# target to build an object file
+Core/Editor/SceneHierarchyPanel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Core/Editor/SceneHierarchyPanel.cpp.o
+.PHONY : Core/Editor/SceneHierarchyPanel.cpp.o
+
+Core/Editor/SceneHierarchyPanel.i: Core/Editor/SceneHierarchyPanel.cpp.i
+.PHONY : Core/Editor/SceneHierarchyPanel.i
+
+# target to preprocess a source file
+Core/Editor/SceneHierarchyPanel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Core/Editor/SceneHierarchyPanel.cpp.i
+.PHONY : Core/Editor/SceneHierarchyPanel.cpp.i
+
+Core/Editor/SceneHierarchyPanel.s: Core/Editor/SceneHierarchyPanel.cpp.s
+.PHONY : Core/Editor/SceneHierarchyPanel.s
+
+# target to generate assembly for a file
+Core/Editor/SceneHierarchyPanel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Core/Editor/SceneHierarchyPanel.cpp.s
+.PHONY : Core/Editor/SceneHierarchyPanel.cpp.s
+
 Core/FBO.o: Core/FBO.cpp.o
 .PHONY : Core/FBO.o
 
@@ -724,6 +748,9 @@ help:
 	@echo "... Core/EBO.o"
 	@echo "... Core/EBO.i"
 	@echo "... Core/EBO.s"
+	@echo "... Core/Editor/SceneHierarchyPanel.o"
+	@echo "... Core/Editor/SceneHierarchyPanel.i"
+	@echo "... Core/Editor/SceneHierarchyPanel.s"
 	@echo "... Core/FBO.o"
 	@echo "... Core/FBO.i"
 	@echo "... Core/FBO.s"
