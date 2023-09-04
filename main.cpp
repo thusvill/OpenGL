@@ -92,12 +92,7 @@
         ImGui::End();
     }
 
-    void UpdateLight(glm::vec4 lightColor, glm::vec3 lightPos, Shader shaderProgram) {
-        shaderProgram.Activate();
-        glUniform4f(glGetUniformLocation(shaderProgram.ID, "lightColor"), lightColor.x, lightColor.y, lightColor.z,
-                    lightColor.w);
-        glUniform3f(glGetUniformLocation(shaderProgram.ID, "lightPos"), lightPos.x, lightPos.y, lightPos.z);
-    }
+
 
     Ref<Scene> m_ActiveScene;
     SceneHierarchyPanel m_Panel;
@@ -155,13 +150,13 @@ float light_intensity = 1.0f;
         Shader normalsShaderProgram("Core/Shaders/default.vert", "Core/Shaders/normals.frag",
                                     "Core/Shaders/normals.geom");
 
-        glm::vec4 lightColor = glm::vec4(1.0f, 1.0f, 1.0f, 1.0f);
-        glm::vec3 lightPos = glm::vec3(0.5f, 0.5f, 0.5f);
+       // glm::vec4 lightColor = glm::vec4(1.0f, 1.0f, 1.0f, 1.0f);
+       // glm::vec3 lightPos = glm::vec3(0.5f, 0.5f, 0.5f);
 
-        shaderProgram.Activate();
-        glUniform4f(glGetUniformLocation(shaderProgram.ID, "lightColor"), lightColor.x, lightColor.y, lightColor.z,
-                    lightColor.w);
-        glUniform3f(glGetUniformLocation(shaderProgram.ID, "lightPos"), lightPos.x, lightPos.y, lightPos.z);
+        //shaderProgram.Activate();
+       // glUniform4f(glGetUniformLocation(shaderProgram.ID, "lightColor"), lightColor.x, lightColor.y, lightColor.z,
+      //              lightColor.w);
+       // glUniform3f(glGetUniformLocation(shaderProgram.ID, "lightPos"), lightPos.x, lightPos.y, lightPos.z);
 
 
         glEnable(GL_DEPTH_TEST);
@@ -190,6 +185,8 @@ float light_intensity = 1.0f;
         //auto model2 = m_ActiveScene->CreateEntity("model2");
         //model2.AddComponent<MeshRenderer>(Model("../Models/sword/scene.gltf"), shaderProgram);
 
+        auto mainLight = m_ActiveScene->CreateEntity("Directional Light");
+        auto light = mainLight.AddComponent<LightComponent>(shaderProgram, 0);
 
 
         double prevTime = 0.0;
@@ -202,7 +199,8 @@ float light_intensity = 1.0f;
 
         FBO frameBuffer = FBO(Width, Height);
 
-
+        m_ActiveScene->OnStart();
+        m_Panel.OnStart();
         while (!glfwWindowShouldClose(window)) {
 
 
@@ -270,6 +268,7 @@ float light_intensity = 1.0f;
                 ImGui::PopStyleVar();
 
                 //Model
+                /*
                 {
                     ImGui::Begin("Model");
                     ImGui::Text("%s", model.GetComponent<TagComponent>().Tag.c_str());
@@ -292,7 +291,9 @@ float light_intensity = 1.0f;
 
                     ImGui::End();
                 }
+                 */
                 //Lightning
+                /*
                 {
                     ImGui::Begin("Lightning");
 
@@ -312,6 +313,7 @@ float light_intensity = 1.0f;
 
                     ImGui::End();
                 }
+                 */
                 //Camera
                 {
                     ImGui::Begin("Camera");

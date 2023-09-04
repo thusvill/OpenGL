@@ -1122,7 +1122,8 @@ CMakeFiles/Game.dir/Core/Editor/SceneHierarchyPanel.cpp.o: Core/Editor/SceneHier
   Core/GameEngine.h \
   Core/Core.h \
   Core/Scene/Entity.inl \
-  Core/Scene/Components.h
+  Core/Scene/Components.h \
+  Core/GameEngine.h
 
 CMakeFiles/Game.dir/Core/FBO.cpp.o: Core/FBO.cpp \
   /usr/include/stdc-predef.h \
@@ -5172,7 +5173,7 @@ CMakeFiles/Game.dir/main.cpp.o: main.cpp \
   Core/Scene/Entity.inl \
   Core/Scene/Components.h \
   Core/Core.h \
-  Core/Editor/SceneHierchyPanel.h \
+  Core/Editor/SceneHierarchyPanel.h \
   Core/Core.h \
   Core/Scene/Scene.h
 
@@ -5628,8 +5629,6 @@ Core/EBO.h:
 /usr/include/glm/ext/matrix_clip_space.hpp:
 
 /usr/include/c++/11/pstl/pstl_config.h:
-
-Core/Editor/SceneHierchyPanel.h:
 
 /usr/include/c++/11/bits/forward_list.h:
 

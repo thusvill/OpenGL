@@ -15,9 +15,11 @@ public:
     SceneHierarchyPanel(const Ref<Scene>& contex);
     void SetContex(const Ref<Scene>& contex);
 
+    void OnStart();
     void OnImguiRender();
 private:
     void DrawEntityNode(Entity entity);
+    void DrawComponents(Entity entity);
     Ref<Scene> m_Contex;
     Entity m_EntitySelectionContex;
 };

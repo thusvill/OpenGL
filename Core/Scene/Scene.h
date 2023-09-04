@@ -18,6 +18,9 @@ public:
     Camera m_currentCamera;
 
     Entity CreateEntity(const std::string& name = "");
+    void DestroyEntity(Entity entity);
+
+    void OnStart();
 
     void OnDraw();
     void OnUpdate();

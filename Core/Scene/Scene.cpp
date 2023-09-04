@@ -23,6 +23,15 @@ Entity Scene::CreateEntity(const std::string& name) {
 
     return entity;
 }
+
+void Scene::DestroyEntity(Entity entity) {
+    m_Registry.destroy(entity);
+}
+
+void Scene::OnStart() {
+
+}
+
 Camera* mainCamera;
 void Scene::OnDraw() {
 
@@ -41,6 +50,26 @@ void Scene::OnDraw() {
 }
 
 void Scene::OnUpdate() {
+    //Light
+    {
+        //auto groupL = m_Registry.group<Transform>(entt::get<LightComponent>);
+        auto groupL = m_Registry.view<Transform, LightComponent>();
+        for (auto entity:groupL) {
+            auto [transform, light] = groupL.get<Transform, LightComponent>(entity);
+            light.Position = transform.Position;
+            auto shaderProgram =  light.m_Shader;
+            auto lightColor = light.Color;
+            auto lightPos =light.Position;
+            GLuint light_loc = glGetUniformLocation(shaderProgram.ID, "type");
+            glUniform1i(light_loc, light.type);
+            glUniform1f(glGetUniformLocation(shaderProgram.ID, "intensity"), light.intensity);
+            shaderProgram.Activate();
+            glUniform4f(glGetUniformLocation(shaderProgram.ID, "lightColor"), lightColor.x, lightColor.y, lightColor.z,
+                        lightColor.w);
+            glUniform3f(glGetUniformLocation(shaderProgram.ID, "lightPos"), lightPos.x, lightPos.y, lightPos.z);
+
+        }
+    }
 
     //Camera
     {
@@ -64,14 +93,17 @@ void Scene::OnUpdate() {
         }
     }
 
-    auto group = m_Registry.group<Transform>(entt::get<MeshRenderer>);
-    for (auto entity: group) {
-        auto [transform, mesh] = group.get<Transform, MeshRenderer>(entity);
-        //mesh.mesh.SetTransform(mesh.shader, transform.Position, transform.Rotation, transform.Scale);
-        {
-            mesh.mesh.Position(mesh.shader, transform.Position);
-            mesh.mesh.Rotation(mesh.shader, transform.Rotation);
-            mesh.mesh.Scale(mesh.shader, transform.Scale);
+    {
+        auto group = m_Registry.group<Transform>(entt::get<MeshRenderer>);
+        for (auto entity: group) {
+            auto [transform, mesh] = group.get<Transform, MeshRenderer>(entity);
+            //mesh.mesh.SetTransform(mesh.shader, transform.Position, transform.Rotation, transform.Scale);
+            {
+                mesh.mesh.Position(mesh.shader, transform.Position);
+                mesh.mesh.Rotation(mesh.shader, transform.Rotation);
+                mesh.mesh.Scale(mesh.shader, transform.Scale);
+            }
         }
     }
+
 }

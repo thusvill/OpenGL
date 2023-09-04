@@ -528,4 +528,5 @@ CMakeFiles/Game.dir/Core/Editor/SceneHierarchyPanel.cpp.o: \
  /home/bios/CLionProjects/Game/OpenGL/Core/Editor/../Scene/../Scene/../GameEngine.h \
  /home/bios/CLionProjects/Game/OpenGL/Core/Editor/../Scene/../Core.h \
  /home/bios/CLionProjects/Game/OpenGL/Core/Editor/../Scene/Entity.inl \
- /home/bios/CLionProjects/Game/OpenGL/Core/Editor/../Scene/Components.h
+ /home/bios/CLionProjects/Game/OpenGL/Core/Editor/../Scene/Components.h \
+ /home/bios/CLionProjects/Game/OpenGL/Core/Editor/../GameEngine.h

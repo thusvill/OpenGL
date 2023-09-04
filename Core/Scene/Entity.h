@@ -15,7 +15,10 @@ public:
     Entity(const Entity& other) = default;
 
     template<typename T>
-    bool HasComponent();
+    bool HasComponent() {
+        return m_Scene->m_Registry.all_of<T>(m_EntityHandle);
+    }
+
 
     template<typename T, typename... Args>
     T& AddComponent(Args&&... args);
@@ -26,6 +29,7 @@ public:
     template<typename T>
     T& RemoveComponent();
 
+    operator entt::entity() const { return m_EntityHandle;}
     operator uint32_t() const { return (uint32_t)m_EntityHandle;}
     bool operator==(const Entity& other) const
     {

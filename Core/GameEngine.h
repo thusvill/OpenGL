@@ -25,7 +25,6 @@ extern char path[1024];
 extern glm::vec3 model_position;
 extern glm::vec3 model_rotation;
 extern glm::vec3 model_scale;
-extern float light_intensity;
 
 
     static void DrawVec3Controls(const std::string &label, glm::vec3 &values, float resetValues = 0.0f,

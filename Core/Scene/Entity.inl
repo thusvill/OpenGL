@@ -7,10 +7,7 @@
 
 // Entity.inl
 
-template<typename T>
-bool Entity::HasComponent() {
-    return m_Scene->m_Registry.owned<T>(m_EntityHandle);
-}
+
 
 template<typename T, typename ...Args>
 T& Entity::AddComponent(Args &&...args) {
