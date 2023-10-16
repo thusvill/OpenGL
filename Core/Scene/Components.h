@@ -35,12 +35,13 @@ struct Transform{
 };
 
 struct MeshRenderer{
+
+    MeshRenderer(): mesh(Model("/home/bios/CLionProjects/Game/Models/map/scene.gltf")), shader(Shader("/home/bios/CLionProjects/Game/OpenGL/Core/Shaders/default.vert","/home/bios/CLionProjects/Game/OpenGL/Core/Shaders/default.frag","/home/bios/CLionProjects/Game/OpenGL/Core/Shaders/default.geom")){};
     Model mesh;
     Shader shader;
 
-    MeshRenderer() =  default;
     MeshRenderer(const MeshRenderer&) = default;
-    MeshRenderer(Model new_mesh, Shader newShader): mesh(new_mesh), shader(newShader){};
+    MeshRenderer(const Model& model, const Shader& shader) : mesh(model), shader(shader) {}
 
 };
 
@@ -61,9 +62,10 @@ struct LightComponent{
     glm::vec3 Position;
     float intensity;
 
-    LightComponent()= default;
+    LightComponent() = default;
     LightComponent(const LightComponent&) = default;
     LightComponent(Shader shader, int lightType = 0): m_Shader(shader), type(lightType){};
+
 
     bool operator!=(const LightComponent& other) const {
         return m_Shader.ID != other.m_Shader.ID;

@@ -38,6 +38,7 @@ public:
 
     float speed = 0.005f;
     float sensitivity =100.0f;
+    bool enableControl= false;
 
     Camera(int width, int height, glm::vec3 position, float newfov, float newnp, float newfp);
     void Resize(int n_width, int n_height);

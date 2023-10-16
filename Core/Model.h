@@ -20,8 +20,13 @@ public:
     void Scale(Shader shader, glm::vec3 newScale);
     void SetTransform(Shader shader, glm::vec3 position,glm::vec3 rotation,glm::vec3 scale);
 
+    explicit operator bool() const {
+        // Define the condition under which the Model is considered "true"
+        return !meshes.empty(); // For example, consider it "true" if meshes are loaded
+    }
 
 private:
+    friend class SceneHierarchyPanel;
     const char* file;
     std::vector<unsigned char> data;
     json JSON;

@@ -44,6 +44,7 @@ void Scene::OnDraw() {
             //MeshRenderer &meshRenderer = group.get<MeshRenderer>(entity);
             //Transform &transform = group.get<Transform>(entity);
             auto [transform, meshRenderer] = group.get<Transform, MeshRenderer>(entity);
+            if(meshRenderer.mesh && meshRenderer.shader.ID)
             meshRenderer.mesh.Draw(meshRenderer.shader, m_currentCamera);
         }
 
@@ -68,6 +69,7 @@ void Scene::OnUpdate() {
                         lightColor.w);
             glUniform3f(glGetUniformLocation(shaderProgram.ID, "lightPos"), lightPos.x, lightPos.y, lightPos.z);
 
+
         }
     }
 
@@ -82,8 +84,8 @@ void Scene::OnUpdate() {
                 //apply transforms
                 {
                     auto camTrans = camera.camera;
-                    camTrans.Position = transform.Position;
-                    camTrans.Orientation = transform.Rotation;
+                    transform.Position = camTrans.Position;
+                    transform.Rotation = camTrans.Orientation;
                 }
                 //update matrix
                 {
@@ -93,6 +95,7 @@ void Scene::OnUpdate() {
         }
     }
 
+    //MeshRenderer
     {
         auto group = m_Registry.group<Transform>(entt::get<MeshRenderer>);
         for (auto entity: group) {
@@ -106,4 +109,25 @@ void Scene::OnUpdate() {
         }
     }
 
+}
+
+void Scene::OnDelete() {
+    //Light
+    {
+        auto groupL = m_Registry.view<Transform, LightComponent>();
+        for (auto entity: groupL) {
+            auto [transform, light] = groupL.get<Transform, LightComponent>(entity);
+            light.m_Shader.Delete();
+
+        }
+    }
+    //Model
+    {
+        auto groupL = m_Registry.view<Transform, MeshRenderer>();
+        for (auto entity: groupL) {
+            auto [transform, model] = groupL.get<Transform, MeshRenderer>(entity);
+            model.shader.Delete();
+
+        }
+    }
 }

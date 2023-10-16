@@ -150,15 +150,6 @@ float light_intensity = 1.0f;
         Shader normalsShaderProgram("Core/Shaders/default.vert", "Core/Shaders/normals.frag",
                                     "Core/Shaders/normals.geom");
 
-       // glm::vec4 lightColor = glm::vec4(1.0f, 1.0f, 1.0f, 1.0f);
-       // glm::vec3 lightPos = glm::vec3(0.5f, 0.5f, 0.5f);
-
-        //shaderProgram.Activate();
-       // glUniform4f(glGetUniformLocation(shaderProgram.ID, "lightColor"), lightColor.x, lightColor.y, lightColor.z,
-      //              lightColor.w);
-       // glUniform3f(glGetUniformLocation(shaderProgram.ID, "lightPos"), lightPos.x, lightPos.y, lightPos.z);
-
-
         glEnable(GL_DEPTH_TEST);
 
 
@@ -252,6 +243,11 @@ float light_intensity = 1.0f;
                 ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0, 0));
                 {
                     ImGui::Begin("Viewport");
+                    if(ImGui::IsMouseDragging(1) && ImGui::IsWindowHovered()){
+                        m_Camera.GetComponent<CameraComponent>().camera.enableControl = true;
+                    } else{
+                        m_Camera.GetComponent<CameraComponent>().camera.enableControl = false;
+                    }
 
                     GLuint fboTextureID = frameBuffer.GetTexture();
                     ImVec2 panelSize = ImGui::GetContentRegionAvail();
@@ -267,94 +263,6 @@ float light_intensity = 1.0f;
                 }
                 ImGui::PopStyleVar();
 
-                //Model
-                /*
-                {
-                    ImGui::Begin("Model");
-                    ImGui::Text("%s", model.GetComponent<TagComponent>().Tag.c_str());
-                    ImGui::Separator();
-                    DrawVec3Controls("Position", model.GetComponent<Transform>().Position);
-                    DrawVec3Controls("Rotation", model.GetComponent<Transform>().Rotation);
-                    DrawVec3Controls("Scale", model.GetComponent<Transform>().Scale, 1.0f);
-
-
-                    ImGui::InputText("Name", path, sizeof(path));
-                    if (ImGui::Button("Load")) {
-                        // Assuming model_path is a char*
-                        std::string modelPathString = "../Models/";
-                        modelPathString += path;
-                        modelPathString += "/scene.gltf";
-                        const char *modelFilePath = modelPathString.c_str();
-                        Model newM(modelFilePath);
-                        model_m = newM;
-                    }
-
-                    ImGui::End();
-                }
-                 */
-                //Lightning
-                /*
-                {
-                    ImGui::Begin("Lightning");
-
-                    const char *lightTypes[] = {"Directional", "Point", "Spot"};
-
-                    if (ImGui::Combo("Light Type", &selectedLightType, lightTypes, IM_ARRAYSIZE(lightTypes))) {
-                        GLuint light_loc = glGetUniformLocation(shaderProgram.ID, "type");
-                        glUniform1i(light_loc, selectedLightType);
-                    }
-
-                    ImGui::ColorEdit4("Light Color", glm::value_ptr(lightColor));
-                    ImGui::DragFloat("Intensity", &light_intensity, 0.5f);
-                    glUniform1f(glGetUniformLocation(shaderProgram.ID, "intensity"), light_intensity);
-                    //ImGui::DragFloat3("Position", glm::value_ptr(lightPos), 0.5f, -10.0f, 10.0f);
-                    DrawVec3Controls("Light Position",lightPos);
-                    UpdateLight(lightColor, lightPos, shaderProgram);
-
-                    ImGui::End();
-                }
-                 */
-                //Camera
-                {
-                    ImGui::Begin("Camera");
-                    //ImGui::Text("Camera Position: (%.2f, %.2f, %.2f)", camera_c.Position.x, camera_c.Position.y,camera_c.Position.z);
-                    DrawVec3Controls("Camera Position", m_Camera.GetComponent<CameraComponent>().camera.Position);
-                    //ImGui::Text("Camera Rotation: (%.2f, %.2f, %.2f)", camera_c.Orientation.x, camera_c.Orientation.y,camera_c.Orientation.z);
-                    DrawVec3Controls("Camera Rotation", m_Camera.GetComponent<CameraComponent>().camera.Orientation);
-                    if (ImGui::Button("Reset to preset")) {
-                        camera_c.Position = glm::vec3(2.07479f, 1.249f, -0.381916f);
-                        camera_c.Orientation = glm::vec3(-4.71458f, -1.41498f, 0.173473f);
-                    }
-
-                    ImGui::Separator();
-                    const char *cameraType[] = {"Perspective", "Orthographic"};
-                    if (ImGui::Combo("Camera type", &camType, cameraType, IM_ARRAYSIZE(cameraType))) {
-                        switch (camType) {
-                            case 0:
-                                camera_c.SetCameraMode(Camera::CamMode::Perspective);
-                                break;
-                            case 1:
-                                camera_c.SetCameraMode(Camera::CamMode::Orthographic);
-                                break;
-
-                        }
-                    }
-
-                    ImGui::SeparatorText("View");
-
-                    if (camera_c.mode == Camera::CamMode::Perspective) {
-                        ImGui::DragFloat("FOV", &camera_c.fov, 1.0f, 5.0f, 180.0f);
-                    }
-
-                    ImGui::DragFloat("Near Plane", &camera_c.nearPlane, 0.1f, 0.1f, 100.0f);
-                    ImGui::DragFloat("Far Plane", &camera_c.farPlane, 1.0f, 1.0f, 1000.0f);
-
-                    ImGui::SeparatorText("Controls");
-                    ImGui::DragFloat("Speed", &camera_c.speed, 0.01f, 0.01f, 5.0f);
-                    ImGui::DragFloat("Sensitivity", &camera_c.sensitivity, 0.5f, 1.0f, 100.0f);
-
-                    ImGui::End();
-                }
                 //Rendering
                 {
                     ImGui::Begin("Rendering");
@@ -429,6 +337,7 @@ float light_intensity = 1.0f;
 
         shaderProgram.Delete();
         normalsShaderProgram.Delete();
+        m_ActiveScene->OnDelete();
 
 
         ImGui_ImplOpenGL3_Shutdown();

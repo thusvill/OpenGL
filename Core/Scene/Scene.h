@@ -24,6 +24,7 @@ public:
 
     void OnDraw();
     void OnUpdate();
+    void OnDelete();
 
 private:
     entt::registry m_Registry;

@@ -18,6 +18,8 @@ public:
     void OnStart();
     void OnImguiRender();
 private:
+    template<typename T>
+    void DisplayAddComponentEntry(const std::string& entryName);
     void DrawEntityNode(Entity entity);
     void DrawComponents(Entity entity);
     Ref<Scene> m_Contex;
